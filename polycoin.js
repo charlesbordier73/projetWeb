@@ -14,6 +14,6 @@ menu.controller('menu',['$scope',function($scope){
 menu.directive('articles',function(){
 	return{
 		restrict: 'AEC',
-		templateUrl: './article.php'
+		templateUrl: 'article.php'
 	}
 });
