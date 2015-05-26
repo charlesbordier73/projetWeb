@@ -1,4 +1,3 @@
-<!doctype html>
 coucou
 <!--
 <table border="1">

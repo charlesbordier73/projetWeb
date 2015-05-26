@@ -1,4 +1,3 @@
-(function() {
 var polycoin = angular.module('polycoin',['directive']);
 
 polycoin.controller('menuController',['$scope',function($scope){
@@ -18,4 +17,3 @@ polycoin.directive('articles',function(){
 		templateUrl: './article.php'
 	}
 });
-})();

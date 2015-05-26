@@ -1,5 +1,4 @@
 <!doctype html>
-cp
 <html lang="fr" ng-app="polycoin">
 <head>
   <meta charset="utf-8">
