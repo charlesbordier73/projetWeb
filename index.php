@@ -17,7 +17,7 @@
 <body>
 	<h1>{{1+1}}</h1>
  	<header>Bienvenue sur le PolyCoin</header>
- 	<section ng-controller="menuController">
+ 	<!--<section ng-controller="menuController">
  		<ul class="nav nav-pills">
 
  			<li ng-class="menuController.estChoisi(1)">
@@ -32,7 +32,7 @@
  		 	
 
  		<div article class="panel" ng-show="estChoisi(2)"></div>
- 	</section>
+ 	</section>-->
 	<script type ="text/javascript" src="polycoin.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 

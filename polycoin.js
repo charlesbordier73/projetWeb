@@ -1,6 +1,7 @@
 (function() {
 	var polycoin = angular.module('polycoin',[]);
 
+	/*
 	polycoin.controller('menuController',['$scope',function($scope){
 		$scope.ong = 1;
 	
@@ -18,5 +19,6 @@
 			templateUrl: './article.php'
 		};
 	});
+	*/
 
 })();
