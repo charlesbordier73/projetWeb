@@ -18,9 +18,9 @@
  			<li ng-class="{active: $parent.estChoisi(2)}">
  				<a href ng-click="ong=2">Articles</a>
  			</li>
- 		
- 		</ul>
- 		<div articles class="panel" ng-show="estChoisi(2)"></div>
+ 			
+ 			<div articles class="panel" ng-show="estChoisi(2)"></div>
+		</ul>
  	</section>
 
 	<script type ="text/javascript" src="angular.min.js"></script>
