@@ -16,6 +16,6 @@ polycoin.directive('articles',function(){
 	return{
 		restrict: 'AEC',
 		templateUrl: './article.php'
-	}
+	};
 });
 })();
