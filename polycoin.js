@@ -1,6 +1,6 @@
-var polycoin = angular.module('polycoin',[]);
-
-polycoin.controller('menuController',['$scope',function($scope){
+var alu3a = angular.module('alu3a', []);
+	
+alu3a.controller('ongletsController',['$scope',function($scope){
 	$scope.ong = 1;
 	
 	$scope.estChoisi = function(chOng) {
@@ -11,9 +11,23 @@ polycoin.controller('menuController',['$scope',function($scope){
 	};
 }]);
 
-polycoin.directive('articles',function(){
+alu3a.directive('quelquesRealisations',function(){
 	return{
 		restrict: 'AEC',
-		templateUrl: './article.php'
+		templateUrl: './quelques-realisations.html'
+	}
+});
+
+alu3a.directive('presentation',function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './presentation.html'
+	}
+});
+
+alu3a.directive('fournisseurs',function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './fournisseurs.php'
 	}
 });
