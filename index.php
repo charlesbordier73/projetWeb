@@ -23,8 +23,8 @@
  		<div article class="panel" ng-show="estChoisi(2)"></div>
  	</section>
 
-	<script type ="text/javascript" src="angular.min.js"></script>
-	<script type ="text/javascript" src="polycoin.js"></script>
+	<script type ="text/javascript" src="./angular.min.js"></script>
+	<script type ="text/javascript" src="./polycoin.js"></script>
 
 </body>
 </html>
