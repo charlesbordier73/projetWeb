@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" ng-app>
+<html lang="fr" ng-app="polycoin">
 <head>
   <meta charset="utf-8">
   <title>Accueil</title>
