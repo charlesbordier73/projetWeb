@@ -11,11 +11,11 @@
  	<section ng-controller="menuController">
  		<ul class="nav nav-pills">
 
- 			<li ng-class="{active: menu.estChoisi(1)}">
+ 			<li ng-class="menuController.estChoisi(1)">
  				<a>Accueil</a>
  			</li>
  			
- 			<li ng-class="{active: menu.estChoisi(2)}">
+ 			<li ng-class="menuController.estChoisi(2)">
  				<a href ng-click="ong=2">Articles</a>
  			</li>
  			
