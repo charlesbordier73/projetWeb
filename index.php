@@ -24,7 +24,7 @@
  	</section>
 
 	<script type ="text/javascript" src="angular.min.js"></script>
-	<script type ="text/javascript" src="polycoin.min.js"></script>
+	<script type ="text/javascript" src="polycoin.js"></script>
 
 </body>
 </html>
