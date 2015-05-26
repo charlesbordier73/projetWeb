@@ -13,7 +13,7 @@ polycoin.controller('menuController',['$scope',function($scope){
 
 polycoin.directive('articles',function(){
 	return{
-		restrict: 'E',
+		restrict: 'AEC',
 		templateUrl: './article.php'
 	}
 });
