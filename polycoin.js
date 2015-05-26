@@ -1,4 +1,4 @@
-var polycoin = angular.module('polycoin',[]);
+var polycoin = angular.module('polycoin',['directive']);
 
 polycoin.controller('menuController',['$scope',function($scope){
 	$scope.ong = 1;
