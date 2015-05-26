@@ -19,8 +19,8 @@
  				<a href ng-click="ong=2">Articles</a>
  			</li>
  			
- 			<div articles class="panel" ng-show="estChoisi(2)"></div>
-		</ul>
+ 		</ul>
+ 		<div articles class="panel" ng-show="estChoisi(2)"></div>
  	</section>
 
 	<script type ="text/javascript" src="angular.min.js"></script>
