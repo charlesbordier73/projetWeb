@@ -1,6 +1,6 @@
-var menu = angular.module('menu',[]);
+var polycoin = angular.module('polycoin',[]);
 
-menu.controller('menu',['$scope',function($scope){
+polycoin.controller('menuController',['$scope',function($scope){
 	$scope.ong = 1;
 	
 	$scope.estChoisi = function(chOng) {
@@ -11,7 +11,7 @@ menu.controller('menu',['$scope',function($scope){
 	};
 }]);
 
-menu.directive('articles',function(){
+polycoin.directive('articles',function(){
 	return{
 		restrict: 'E',
 		templateUrl: './article.php'

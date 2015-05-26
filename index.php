@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" ng-app="polycoin">
 <head>
   <meta charset="utf-8">
   <title>Accueil</title>
@@ -8,7 +8,7 @@
 <body>
 
  	<header>Bienvenue sur le PolyCoin</header>
- 	<section ng-controller="menu">
+ 	<section ng-controller="menuController">
  		<ul class="nav nav-pills">
 
  			<li ng-class="{active: $parent.estChoisi(1)}">
