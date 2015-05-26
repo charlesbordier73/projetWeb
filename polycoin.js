@@ -13,7 +13,7 @@ menu.controller('menu',['$scope',function($scope){
 
 menu.directive('articles',function(){
 	return{
-		restrict: 'AEC',
-		templateUrl: 'article.php'
+		restrict: 'E',
+		templateUrl: './article.php'
 	}
 });
