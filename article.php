@@ -6,10 +6,10 @@ coucou
 		<th>Date</th>
 	</tr>
 	<?php
-	$serveur = "localhost";
-	$username = "root";
-	$password = "";
-	$bdd = "lepolycoin";
+	$serveur = "127.2.204.2";
+	$username = "adminEGbGpij";
+	$password = "cDk-2WrRQM_U";
+	$bdd = "php";
 	
 	try {
     	$connexion = new PDO("mysql:host=$serveur;dbname=$bdd", $username, $password);
