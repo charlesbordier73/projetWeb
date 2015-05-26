@@ -1,4 +1,5 @@
 coucou
+<!--
 <table border="1">
 	<tr>
 		<th>Nom</th>
@@ -33,3 +34,4 @@ coucou
 	$connexion=null;
 ?>
 </table>
+-->
