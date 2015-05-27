@@ -1,5 +1,7 @@
 <?php
 error_reporting(E_ALL);
+include 'header.php';
+
 ?>
 
 <!doctype html>
@@ -19,22 +21,7 @@ error_reporting(E_ALL);
 
 </head>
 <body>
- 	<header><b>Bienvenue sur le PolyCoin</b></header>
-	<ul class="nav nav-pills">
-
-		<li>
-			<a href="index.php">Accueil</a>
-		</li>
-		
-		<li>
-			<a href="article.php">Articles</a>
-		</li>
-		<li>
-			<a href="ViewInscription.php">Inscription</a>
-		</li>
-	</ul>
- 		
-
+ 	
 	<br>
 	<center>
 	<form method="POST" action="ControllerInscription.php">
@@ -61,7 +48,7 @@ error_reporting(E_ALL);
 				</tr>
 				<tr>
 					<td> Mot de passe : </td>
-					<td><input type="text" name="mdp" size="20" placeholder="Votre mot de passe" maxlength="50"></td>
+					<td><input type="password" name="mdp" size="20" placeholder="Votre mot de passe" maxlength="50"></td>
 				</tr>
 			</table>
 			<br>

@@ -1,5 +1,7 @@
 <?php
 error_reporting(E_ALL);
+include 'header.php';
+
 ?>
 
 <!doctype html>
@@ -15,27 +17,7 @@ error_reporting(E_ALL);
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-
-</head>
-<body>
- 	<header><b>Bienvenue sur le PolyCoin</b></header>
-	<ul class="nav nav-pills">
-
-		<li>
-			<a href="index.php">Accueil</a>
-		</li>
-		
-		<li>
-			<a href="article.php">Articles</a>
-		</li>
-		<li>
-			<a href="ViewInscription.php">Inscription</a>
-		</li>
-	</ul>
-
  		 
-
 <table border="1">
 	<tr>
 		<th>Nom</th>
