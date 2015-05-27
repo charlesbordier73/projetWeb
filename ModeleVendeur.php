@@ -26,7 +26,8 @@ error_reporting(E_ALL);
         echo $mdp["mdp"];
             if($_POST['mdp']==$mdp["mdp"]){
                 echo "totomdpaccept";
-                $id=mysql_query("SELECT id from Vendeur where login='$login'");
+                $idTab=mysql_fetch_assoc(mysql_query("SELECT id from Vendeur where login='$login'"));
+                $id=$idTab["id"];
                 echo $id;
                 $tokenValue=sha1(uniqid(rand()));
                 setcookie("id",$id,time()+(3600),"/");
