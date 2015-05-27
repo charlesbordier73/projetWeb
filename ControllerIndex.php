@@ -21,6 +21,6 @@ else
     { 
     	echo "totoMarche";
         include 'ModeleVendeur.php';
-        //header('Location:index.php');
+        header('Location:index.php');
     }  
 ?>

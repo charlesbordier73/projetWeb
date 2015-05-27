@@ -32,7 +32,8 @@ error_reporting(E_ALL);
                 $tokenValue=sha1(uniqid(rand()));
                 setcookie("id",$id,time()+(3600),"/");
                 setcookie("token",$tokenValue,time()+(3600),"/");
-                mysql_query("UPDATE Vendeur SET token = '$tokenValue' WHERE id = '$id' ");
+                mysql_query("UPDATE Vendeur SET token = '$tokenValue' WHERE id = '$id' ") or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                echo "totoconfirme";
 
             }
 
