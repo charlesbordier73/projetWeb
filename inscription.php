@@ -38,12 +38,12 @@ error_reporting(E_ALL);
 	<br>
 	<form method="POST" action="add.php">
 		<center>
-			Nom<input type="text" name="nom" size="20" value="Jean" maxlength="35"><br>
-			Prénom<input type="text" name="prenom" size="20" value="Lagrange" maxlength="35"><br>
-			Mail<input type="text" name="email" size="20" value="mail@mail.mail" maxlength="70"><br>
-			Tél<input type="text" name="tel" size="20" value="XXXXXXXXXX" maxlength="11"><br>
-			Login<input type="text" name="login" size="20" value="Votre login" maxlength="70"><br>
-			Mot de passe<input type="text" name="url" size="20" value="Votre mot de passe" maxlength="255"><br>
+			Nom <input type="text" name="nom" size="20" value="Jean" maxlength="35"><br>
+			Prénom <input type="text" name="prenom" size="20" value="Lagrange" maxlength="35"><br>
+			Mail <input type="text" name="email" size="20" value="mail@mail.mail" maxlength="70"><br>
+			Tél <input type="text" name="tel" size="20" value="XXXXXXXXXX" maxlength="11"><br>
+			Login <input type="text" name="login" size="20" value="Votre login" maxlength="70"><br>
+			Mot de passe <input type="text" name="url" size="20" value="Votre mot de passe" maxlength="255"><br>
 			<input type="submit" value="Envoyer" name="envoyer">
 		</center>
 	</form>
