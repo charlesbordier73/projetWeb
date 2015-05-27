@@ -19,6 +19,7 @@ if(empty($login) OR empty($mdp))
 
 else      
     { 
+    	echo "toto";
         include 'ModeleVendeur.php';
         header('Location:index.php');
     }  
