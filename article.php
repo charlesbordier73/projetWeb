@@ -41,7 +41,7 @@ error_reporting(E_ALL);
 	</tr>
 	<?php
 	$serveur = "127.2.204.2";
-	$username = "padminEGbGpij";
+	$username = "adminEGbGpij";
 	$password = "cDk-2WrRQM_U";
 	$bdd = "php";
 	
@@ -54,7 +54,7 @@ error_reporting(E_ALL);
 
 	//$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
 	
-	while($article = $result->fetch())
+	while($article = mysql_fetch_array($result))
 	{
 ?>
 	<tr>
@@ -63,8 +63,8 @@ error_reporting(E_ALL);
 	</tr>
 <?php }
 	$resultats->closeCursor();
-	$connexion=null;
-?>
+	mysql_close($link);?>
+	
 </table>
 
 
