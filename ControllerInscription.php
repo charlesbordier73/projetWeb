@@ -20,6 +20,7 @@ else      $login="";
 if(isset($_POST['mdp']))      $mdp=$_POST['mdp'];
 else      $mdp="";
 
+var_dump($_POST);
 // vérification
 if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login)) OR empty($mdp))
     { 

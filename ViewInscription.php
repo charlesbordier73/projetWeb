@@ -53,13 +53,16 @@ error_reporting(E_ALL);
 					<td><input type="text" name="email" size="20" placeholder="mail@mail.mail" maxlength="50"></td>
 				</tr>
 				<tr>
-					<td> Tél : </td><td><input type="text" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10"></td>
+					<td> Tél : </td>
+					<td><input type="text" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10"></td>
 				</tr>
 				<tr>
-					<td> Login : </td><td><input type="text" name="login" size="20" placeholder="Votre login" maxlength="50"></td>
+					<td> Login : </td>
+					<td><input type="text" name="login" size="20" placeholder="Votre login" maxlength="50"></td>
 				</tr>
 				<tr>
-					<td> Mot de passe : </td><td><input type="text" name="mdp" size="20" placeholder="Votre mot de passe" maxlength="50"></td>
+					<td> Mot de passe : </td>
+					<td><input type="text" name="mdp" size="20" placeholder="Votre mot de passe" maxlength="50"></td>
 				</tr>
 			</table>
 			<br>
