@@ -37,13 +37,12 @@ include 'header.php';
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
 
-    	$idclient = mysql_fetch_assoc($_COOKIE['id']);
-    	echo $idclient["id"];
-    	$id=$idclient["id"];
-    	$tokenTab = mysql_fetch_assoc(mysql_query("SELECT token FROM Vendeur WHERE id = '$id'"));
+    	$idclient = $_COOKIE['id'];
+    	echo $idclient;
+    	$tokenTab = mysql_fetch_assoc(mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'"));
     	$token = $tokenTab["token"];
     	echo $token;
-    	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$id'"));
+    	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
     	echo $loginTab;
     	echo $loginTab["login"];
