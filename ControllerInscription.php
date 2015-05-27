@@ -33,14 +33,14 @@ else
 
 
 // vérification
-if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login)) OR empty($mdp))
+if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login) OR empty($mdp))
     { 
-    echo '<font color="red">Attention, tous les champs sont obligatoires !!</font>'; 
+        echo '<font color="red">Attention, tous les champs sont obligatoires !!</font>'; 
     } 
 
 else      
     { 
         echo "1";
-        //include 'ModeleInscription.php';
+        include 'ModeleInscription.php';
     }  
 ?>
