@@ -1,9 +1,3 @@
-<?php
-error_reporting(E_ALL);
-include 'header.php';
-
-?>
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -19,9 +13,23 @@ include 'header.php';
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
- 		 
-	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
+</head>
+<body>
+ 	<header><b>Bienvenue sur le PolyCoin</b>
+	<ul class="nav nav-pills">
 
-
+		<li>
+			<a href="index.php">Accueil</a>
+		</li>
+		
+		<li>
+			<a href="article.php">Articles</a>
+		</li>
+		<li>
+			<a href="ViewInscription.php">Inscription</a>
+		</li>
+	</ul>
+	</header>
 </body>
 </html>
+ 		 

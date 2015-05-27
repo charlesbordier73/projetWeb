@@ -49,11 +49,11 @@ error_reporting(E_ALL);
 				</tr>
 				 <tr>
 					<td> Mail : </td>
-					<td><input type="text" name="email" size="20" placeholder="mail@mail.mail" maxlength="50"></td>
+					<td><input type="mail" name="email" size="20" placeholder="mail@mail.mail" maxlength="50"></td>
 				</tr>
 				<tr>
 					<td> Tél : </td>
-					<td><input type="text" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10"></td>
+					<td><input type="tel" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10"></td>
 				</tr>
 				<tr>
 					<td> Login : </td>
