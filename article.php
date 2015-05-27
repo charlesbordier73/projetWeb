@@ -51,12 +51,12 @@
     	}
 	$resultats = $connexion->query('SELECT NOMARTICLE, Description FROM ARTICLE');
 	
-	while($fournisseur = $resultats->fetch())
+	while($article = $resultats->fetch())
 	{
 ?>
 	<tr>
-		<td><?php echo $fournisseur['NOMARTICLE']; ?></td>
-		<td><?php echo $fournisseur['description']; ?></td>
+		<td><?php echo $article['NOMARTICLE']; ?></td>
+		<td><?php echo $article['description']; ?></td>
 	</tr>
 <?php }
 	$resultats->closeCursor();
