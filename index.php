@@ -23,7 +23,7 @@ include 'header.php';
 	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
 
 	<?php
-     
+     /*
     
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
     {
@@ -33,9 +33,9 @@ include 'header.php';
     	$login=$loginTab["login"];
     	echo "Vous êtes connectés en tant que "$login;
     }
-    else{
+    else{*/
     ?>
-	<!--<form method="POST" action="ControllerIndex.php">
+	<form method="POST" action="ControllerIndex.php">
 		<table>
 			<tr>
 				<td> Login : </td> 
@@ -47,7 +47,7 @@ include 'header.php';
 			</tr>
 		</table>
 	<input type="submit" value="Se connecter" name="envoyer">
-	</form>-->
+	</form>
 	<?php
 	}
 	?>
