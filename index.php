@@ -21,7 +21,7 @@ include 'header.php';
 
  		 
 	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
-
+	<!--
 	<?php
      /*
     
@@ -34,7 +34,7 @@ include 'header.php';
     	echo "Vous êtes connectés en tant que "$login;
     }
     else{*/
-    ?>
+    ?>-->
 	<form method="POST" action="ControllerIndex.php">
 		<table>
 			<tr>
@@ -48,9 +48,7 @@ include 'header.php';
 		</table>
 	<input type="submit" value="Se connecter" name="envoyer">
 	</form>
-	<?php
-	}
-	?>
+
 
 
 </body>
