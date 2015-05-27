@@ -25,7 +25,7 @@ error_reporting(E_ALL);
         $mdp = mysql_fetch_assoc(mysql_query("SELECT mdp from Vendeur where login='$login'"));
         echo $mdp["mdp"];
             if($_POST['mdp']==$mdp){
-
+                echo "totomdpaccept";
                 $id=mysql_query("SELECT id from Vendeur where login='$login'");
                 echo $id;
                 $tokenValue=sha1(uniqid(rand()));
