@@ -28,12 +28,13 @@ include 'header.php';
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
     {
     	$idclient = $_COOKIE['id'];
+    	echo $idclient;
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$loginTab = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
     	$login=$loginTab["login"];
     	echo $loginTab;
     	echo $loginTab["login"];
-    	echo "Vous êtes connectés en tant que ";
+    	echo "Bonjour, vous êtes connectés en tant que ";
     }
     
     else{
