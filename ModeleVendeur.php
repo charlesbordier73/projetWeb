@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 
     if(isset($_POST['login'])  && isset($_POST['mdp'])){
         $login = $_POST['login'];
-        $mdp = "SELECT mdp from Vendeur where login=$login";
+        $mdp = mysql_query("SELECT mdp from Vendeur where login=$login");
             if($_POST['mdp']==$mdp){
 
                 $id="SELECT id from Vendeur where login=$login";

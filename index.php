@@ -22,6 +22,36 @@ include 'header.php';
  		 
 	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
 
+	<?php
+     
+    
+    if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
+    {
+    	$idclient = $_COOKIE['id'];
+    	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
+    	$login = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
+    	echo "Vous êtes connectés en tant que $login";
+
+    if(!isset($_COOKIE['id']) || !isset($_COOKIE['token'])){
+
+    ?>
+	<form method="POST" action="ControllerIndex.php">
+		<table>
+			<tr>
+				<td> Login : </td> 
+				<td><input type="text" name="login" size="20" placeholder="login" maxlength="50"><td>
+			</tr>
+			<tr>
+				<td> Mdp : </td> 
+				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" maxlength="50"><td>
+			</tr>
+		</table>
+	<input type="submit" value="Envoyer" name="envoyer">
+	</form>
+	<?php
+	}
+	?>
+
 
 </body>
 </html>
