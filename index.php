@@ -34,21 +34,21 @@ include 'header.php';
     	echo "Vous êtes connectés en tant que "$login;
     }
     else{
-    ?>
-	<form method="POST" action="ControllerIndex.php">
+    echo"
+	<form method=\"POST\" action=\"ControllerIndex.php\">
 		<table>
 			<tr>
 				<td> Login : </td> 
-				<td><input type="text" name="login" size="20" placeholder="login" maxlength="50"><td>
+				<td><input type=\"text\" name=\"login\" size=\"20\" placeholder=\"login\" maxlength=\"50\"><td>
 			</tr>
 			<tr>
 				<td> Mdp : </td> 
-				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" maxlength="50"><td>
+				<td><input type=\"password\" name=\"mdp\" size=\"20\" placeholder=\"motdepasse\" maxlength=\"50\"><td>
 			</tr>
 		</table>
-	<input type="submit" value="Se connecter" name="envoyer">
-	</form>
-	<?php
+	<input type=\"submit\" value=\"Se connecter\" name=\"envoyer\">
+	</form>";
+	
 	}
 	?>
 
