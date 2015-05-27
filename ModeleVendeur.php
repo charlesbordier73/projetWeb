@@ -23,11 +23,11 @@ error_reporting(E_ALL);
         $login = $_POST['login'];
         echo $login;
         $mdp = mysql_query("SELECT mdp from Vendeur where login='$login'");
-        echo "<br>" $mdp"<br>";
+        echo $mdp;
             if($_POST['mdp']==$mdp){
 
                 $id=mysql_query("SELECT id from Vendeur where login='$login'");
-                echo $id;
+                //echo $id;
                 $tokenValue=sha1(uniqid(rand()));
                 setcookie("id",$id,time()+(3600),"/");
                 setcookie("token",$tokenValue,time()+(3600),"/");
