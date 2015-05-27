@@ -49,10 +49,12 @@ error_reporting(E_ALL);
     $link=mysql_connect($serveur, $username, $password); 
  	mysql_select_db($bdd,$link) or die(mysql_error()); 
     	
+ 	$query = "SELECT `nomArticle`, `description` FROM `Article`";
+ 	$result = mysql_query($query, $link) or die($query . " - " . mysql_error());
 
-	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
+	//$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
 	
-	while($article = $resultats->fetch())
+	while($article = $result->fetch())
 	{
 ?>
 	<tr>
