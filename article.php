@@ -49,13 +49,13 @@
 		{
     	echo "Connexion échouée: " . $e->getMessage();
     	}
-	$resultats = $connexion->query('SELECT NOMARTICLE, Description FROM ARTICLE');
+	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM ARTICLE');
 	
 	while($article = $resultats->fetch())
 	{
 ?>
 	<tr>
-		<td><?php echo $article['NOMARTICLE']; ?></td>
+		<td><?php echo $article['nomArticle']; ?></td>
 		<td><?php echo $article['description']; ?></td>
 	</tr>
 <?php }
