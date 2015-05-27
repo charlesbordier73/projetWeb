@@ -49,10 +49,9 @@ error_reporting(E_ALL);
     $link=mysql_connect($serveur, $username, $password); 
  	mysql_select_db($bdd,$link) or die(mysql_error()); 
     	
- 	$query = "SELECT `nomArticle`, `description` FROM `Article`";
+ 	$query = "SELECT `nomArticle`, `description`,`DateMiseEnLigne` FROM `Article`";
  	$result = mysql_query($query, $link) or die($query . " - " . mysql_error());
 
-	//$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
 	
 	while($article = mysql_fetch_array($result))
 	{
@@ -60,11 +59,13 @@ error_reporting(E_ALL);
 	<tr>
 		<td><?php echo $article['nomArticle']; ?></td>
 		<td><?php echo $article['description']; ?></td>
+		<td><?php echo $article['DateMiseEnLigne']; ?></td>
+
 	</tr>
 <?php }
 	$resultats->closeCursor();
 	mysql_close($link);?>
-	
+
 </table>
 
 
