@@ -10,7 +10,7 @@ error_reporting(E_ALL);
    // connexion
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
-        
+     echo "totopremodel";   
      
     if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['tel']) && isset($_POST['login']) && isset($_POST['mdp'])){
         $sql = "INSERT INTO Vendeur(nom, prenom, mail, tel, login, mdp, categorie) VALUES('$nom', '$prenom', '$email', '$tel', '$login', '$mdp', 'Novice')";
@@ -23,7 +23,7 @@ error_reporting(E_ALL);
         $login = $_POST['login'];
         echo $login;
         $mdp = mysql_query("SELECT mdp from Vendeur where login='$login'");
-        echo "<br>" $mdp"<br>";
+        //echo "<br>" $mdp"<br>";
             if($_POST['mdp']==$mdp){
 
                 $id=mysql_query("SELECT id from Vendeur where login='$login'");
