@@ -62,6 +62,8 @@ error_reporting(E_ALL);
 					<td> Mot de passe : </td><td><input type="text" name="url" size="20" placeholder="Votre mot de passe" maxlength="255"></td>
 				</tr>
 			</table>
+			<br>
+			<br>
 			<p>Tous les champs sont obligatoires !</p>
 			<input type="submit" value="Envoyer" name="envoyer">
 	</form>
