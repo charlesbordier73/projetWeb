@@ -19,21 +19,36 @@ error_reporting(E_ALL);
 
 </head>
 <body>
- 	<header>Bienvenue sur le PolyCoin</header>
- 		<ul class="nav nav-pills">
+ 	<header><b>Bienvenue sur le PolyCoin</b></header>
+	<ul class="nav nav-pills">
 
- 			<li>
- 				<a href="index.php">Accueil</a>
- 			</li>
- 			
- 			<li>
- 				<a href="article.php">Articles</a>
- 			</li>
- 			<li>
- 				<a href="inscription.php">Inscription</a>
- 			</li>
- 		</ul>
- 		 	
+		<li>
+			<a href="index.php">Accueil</a>
+		</li>
+		
+		<li>
+			<a href="article.php">Articles</a>
+		</li>
+		<li>
+			<a href="inscription.php">Inscription</a>
+		</li>
+	</ul>
+ 		
+
+	<br>
+	<form method="POST" action="add.php">
+		<center>
+			Nom<input type="text" name="nom" size="20" value="Jean" maxlength="35"> 
+			Prénom<input type="text" name="prenom" size="20" value="Lagrange" maxlength="35"><br>
+			Mail<input type="text" name="email" size="20" value="mail@mail.mail" maxlength="70"> 
+			Tél<input type="text" name="tel" size="20" value="XXXXXXXXXX" maxlength="11"><br>
+			Login<input type="text" name="login" size="20" value="Votre login" maxlength="70"> 
+			Mot de passe<input type="text" name="url" size="20" value="Votre mot de passe" maxlength="255"><br>
+			<input type="submit" value="Envoyer" name="envoyer">
+		</center>
+	</form>
+		<p>Tous les champs sont obligatoires !</p>
+
 
 </body>
 </html>

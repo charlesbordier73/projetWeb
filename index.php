@@ -20,20 +20,22 @@ error_reporting(E_ALL);
 </head>
 <body>
  	<header>Bienvenue sur le PolyCoin</header>
- 		<ul class="nav nav-pills">
+	<ul class="nav nav-pills">
 
- 			<li>
- 				<a href="index.php">Accueil</a>
- 			</li>
- 			
- 			<li>
- 				<a href="article.php">Articles</a>
- 			</li>
- 			<li>
- 				<a href="inscription.php">Inscription</a>
- 			</li>
- 		</ul>
- 		 	
+		<li>
+			<a href="index.php">Accueil</a>
+		</li>
+		
+		<li>
+			<a href="article.php">Articles</a>
+		</li>
+		<li>
+			<a href="inscription.php">Inscription</a>
+		</li>
+	</ul>
+ 		 
+	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
+
 
 </body>
 </html>
