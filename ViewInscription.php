@@ -30,7 +30,7 @@ error_reporting(E_ALL);
 			<a href="article.php">Articles</a>
 		</li>
 		<li>
-			<a href="inscription.php">Inscription</a>
+			<a href="ViewInscription.php">Inscription</a>
 		</li>
 	</ul>
  		
