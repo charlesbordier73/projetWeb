@@ -38,7 +38,6 @@ error_reporting(E_ALL);
 	<br>
 	<center>
 	<form method="POST" action="ControllerInscription.php">
-		<center>
 			<table>
 				<tr>
 					<td> Nom : </td> 
@@ -71,7 +70,7 @@ error_reporting(E_ALL);
 			<input type="submit" value="Envoyer" name="envoyer">
 	</form>
 		
-</cente>
+	</center>
 
 </body>
 </html>
