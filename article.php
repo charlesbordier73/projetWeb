@@ -42,14 +42,14 @@
 	$bdd = "php";
 	
 	try {
-    	$connexion = new PDO("mysql:host=$serveur;dbname=$bdd", $username, $password);
-    	$connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    	mysql_connect($serveur, $username, $password); 
+ 		mysql_select_db($bdd); 
     	}
 	catch(PDOException $e)
 		{
     	echo "Connexion échouée: " . $e->getMessage();
     	}
-	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM ARTICLE');
+	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
 	
 	while($article = $resultats->fetch())
 	{
