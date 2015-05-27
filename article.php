@@ -61,7 +61,7 @@
 <?php }
 	$resultats->closeCursor();
 	$connexion=null;
-?>*/
+?>*/?>
 </table>
 
 
