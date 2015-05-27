@@ -29,6 +29,9 @@ error_reporting(E_ALL);
  			<li>
  				<a href="article.php">Articles</a>
  			</li>
+ 			<li>
+ 				<a href="inscription.php">Inscription</a>
+ 			</li>
  			
  		</ul>
  		 
