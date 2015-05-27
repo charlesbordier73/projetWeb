@@ -19,7 +19,7 @@ error_reporting(E_ALL);
 
 </head>
 <body>
- 	<header>Bienvenue sur le PolyCoin</header>
+ 	<header><b>Bienvenue sur le PolyCoin</b></header>
 	<ul class="nav nav-pills">
 
 		<li>
@@ -30,9 +30,10 @@ error_reporting(E_ALL);
 			<a href="article.php">Articles</a>
 		</li>
 		<li>
-			<a href="inscription.php">Inscription</a>
+			<a href="ViewInscription.php">Inscription</a>
 		</li>
 	</ul>
+
  		 
 	<p>Bienvenue sur le Polycoin, c'est comme le bon coin, mais pour Polytech.</p>
 
