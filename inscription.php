@@ -36,37 +36,37 @@ error_reporting(E_ALL);
  		
 
 	<br>
+	<center>
 	<form method="POST" action="add.php">
 		<center>
 			<table>
 				<tr>
-					<td>Nom</td> 
-					<td><input type="text" name="nom" size="20" value="Jean" maxlength="35"><td>
+					<td> Nom : </td> 
+					<td><input type="text" name="nom" size="20" placeholder="Jean" maxlength="35"><td>
 				</tr>
 				<tr>
-					<td>Prénom</td>
-					<td><input type="text" name="prenom" size="20" value="Lagrange" maxlength="35"></td>
+					<td> Prénom : </td>
+					<td><input type="text" name="prenom" size="20" placeholder="Lagrange" maxlength="35"></td>
 				</tr>
 				 <tr>
-					<td>Mail</td>
-					<td><input type="text" name="email" size="20" value="mail@mail.mail" maxlength="70"></td>
+					<td> Mail : </td>
+					<td><input type="text" name="email" size="20" placeholder="mail@mail.mail" maxlength="70"></td>
 				</tr>
 				<tr>
-					<td>Tél</td><td><input type="text" name="tel" size="20" value="XXXXXXXXXX" maxlength="11"></td>
+					<td> Tél : </td><td><input type="text" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="11"></td>
 				</tr>
 				<tr>
-					<td>Login</td><td><input type="text" name="login" size="20" value="Votre login" maxlength="70"></td>
+					<td> Login : </td><td><input type="text" name="login" size="20" placeholder="Votre login" maxlength="70"></td>
 				</tr>
 				<tr>
-					<td>Mot de passe</td><td><input type="text" name="url" size="20" value="Votre mot de passe" maxlength="255"></td>
+					<td> Mot de passe : </td><td><input type="text" name="url" size="20" placeholder="Votre mot de passe" maxlength="255"></td>
 				</tr>
 			</table>
-		</center>
 			<p>Tous les champs sont obligatoires !</p>
 			<input type="submit" value="Envoyer" name="envoyer">
 	</form>
 		
-
+</cente>
 
 </body>
 </html>
