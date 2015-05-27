@@ -41,5 +41,8 @@ if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login
 else      
     { 
         include 'ModeleInscription.php';
+        header('Location:index.php');
+        // on affiche le résultat pour le visiteur 
+        echo 'Vous êtes bien inscrit.'; 
     }  
 ?>

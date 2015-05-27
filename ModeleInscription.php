@@ -18,9 +18,6 @@ error_reporting(E_ALL);
     // on insère les informations du formulaire dans la table 
     mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error()); 
 
-    // on affiche le résultat pour le visiteur 
-    echo 'Vous êtes bien inscrit.'; 
-
     mysql_close();  // on ferme la connexion 
 
 ?>
