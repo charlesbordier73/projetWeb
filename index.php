@@ -31,10 +31,10 @@ include 'header.php';
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
-    	echo "Vous êtes connectés en tant que "$login;
+    	echo "Vous êtes connectés en tant que ";
     }
-    /*
-    else{*/
+    
+    else{
     ?>
 	<form method="POST" action="ControllerIndex.php">
 		<table>
@@ -49,8 +49,9 @@ include 'header.php';
 		</table>
 	<input type="submit" value="Se connecter" name="envoyer">
 	</form>
-
-
+	<?php
+	}
+	?>
 
 </body>
 </html>
