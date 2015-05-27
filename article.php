@@ -1,3 +1,5 @@
+error_reporting(E_ALL);
+
 <!doctype html>
 <html lang="fr">
 <head>
