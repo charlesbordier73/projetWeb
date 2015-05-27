@@ -42,7 +42,7 @@ include 'header.php';
     	$token = $tokenTab["token"];
     	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
-    	echo "Bonjour, vous êtes connectés en tant que $login !";
+    	echo "Bonjour, vous êtes connectés en tant que : $login !";
     }
     
     else{
