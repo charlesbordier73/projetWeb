@@ -13,7 +13,7 @@ error_reporting(E_ALL);
         
      
     // on écrit la requête sql 
-    $sql = "INSERT INTO Vendeur(nom, prenom,email, tel, login, mdp, categorie) VALUES($nom,$prenom,$email,$tel,$login,$mdp,'Novice')";
+    $sql = "INSERT INTO Vendeur(nom, prenom,email, tel, login, mdp, categorie) VALUES('$nom','$prenom','$email','$tel','$login','$mdp','Novice')";
      
     // on insère les informations du formulaire dans la table 
     mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error()); 

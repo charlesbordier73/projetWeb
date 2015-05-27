@@ -1,5 +1,5 @@
 <?php 
-echo "1";
+
 //récupération des champs
 if(isset($_POST['nom']))
     $nom=$_POST['nom'];
@@ -40,7 +40,6 @@ if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login
 
 else      
     { 
-        echo "1";
         include 'ModeleInscription.php';
     }  
 ?>
