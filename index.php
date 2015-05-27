@@ -27,12 +27,14 @@ include 'header.php';
     
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
     {
+    	echo "toto1scrit";
     	$idclient = $_COOKIE['id'];
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$login = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
     	echo "Vous êtes connectés en tant que $login";
     }
     else{
+    	echo "totopasinscrit";
     ?>
 	<form method="POST" action="ControllerIndex.php">
 		<table>
@@ -45,7 +47,7 @@ include 'header.php';
 				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" maxlength="50"><td>
 			</tr>
 		</table>
-	<input type="submit" value="Envoyer" name="envoyer">
+	<input type="submit" value="Se connecter" name="envoyer">
 	</form>
 	<?php
 	}

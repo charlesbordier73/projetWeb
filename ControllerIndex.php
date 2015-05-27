@@ -1,5 +1,5 @@
 <?php
-
+echo "totoController";
 if(isset($_POST['login']))
     $login=$_POST['login'];
 else

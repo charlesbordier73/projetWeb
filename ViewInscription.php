@@ -54,7 +54,7 @@ include 'header.php';
 		<br>
 		<br>
 		<p>Tous les champs sont obligatoires !</p>
-		<input type="submit" value="Envoyer" name="envoyer">
+		<input type="submit" value="S\'inscrire" name="envoyer">
 	</form>
 		
 	</center>
