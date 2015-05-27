@@ -37,7 +37,7 @@ error_reporting(E_ALL);
 
 	<br>
 	<center>
-	<form method="POST" action="add.php">
+	<form method="POST" action="ControllerInscription.php">
 		<center>
 			<table>
 				<tr>
