@@ -31,6 +31,7 @@ include 'header.php';
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
+    	echo "1";
     	echo $loginTab["login"];
     	echo "Vous êtes connectés en tant que ";
     }
