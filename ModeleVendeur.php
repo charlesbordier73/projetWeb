@@ -18,12 +18,12 @@ error_reporting(E_ALL);
         mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
 
-    if(isset($_POST['login'])  && isset($_POST['mdp'])){
+    if(isset($_POST['login']) && isset($_POST['mdp'])){
         $login = $_POST['login'];
         $mdp = mysql_query("SELECT mdp from Vendeur where login=$login");
             if($_POST['mdp']==$mdp){
 
-                $id="SELECT id from Vendeur where login=$login";
+                $id=mysql_query("SELECT id from Vendeur where login=$login");
                 $tokenValue=sha1(uniqid(rand()));
                 setcookie("id",$id,time()+(3600),"/");
                 setcookie("token",$tokenValue,time()+(3600),"/");
