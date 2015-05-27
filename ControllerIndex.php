@@ -1,5 +1,4 @@
 <?php
-echo "totoController";
 if(isset($_POST['login']))
     $login=$_POST['login'];
 else
@@ -19,7 +18,6 @@ if(empty($login) OR empty($mdp))
 
 else      
     { 
-    	echo "totoMarche";
         include 'ModeleVendeur.php';
         header('Location:index.php');
     }  
