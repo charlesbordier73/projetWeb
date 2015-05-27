@@ -28,6 +28,7 @@ if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login
 
 else      
     { 
+        echo "1";
         include "ModeleInscription.php";
     }  
 ?>
