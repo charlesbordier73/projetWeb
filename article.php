@@ -41,7 +41,7 @@ error_reporting(E_ALL);
 	</tr>
 	<?php
 	$serveur = "127.2.204.2";
-	$username = "adminEGbGpij";
+	$username = "padminEGbGpij";
 	$password = "cDk-2WrRQM_U";
 	$bdd = "php";
 	
