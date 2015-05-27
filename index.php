@@ -29,7 +29,8 @@ include 'header.php';
     {
     	$idclient = $_COOKIE['id'];
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
-    	$login = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
+    	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
+    	$login=$loginTab["login"];
     	echo "Vous êtes connectés en tant que '$login'";
     }
     else{
