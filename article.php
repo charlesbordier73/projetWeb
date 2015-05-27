@@ -41,14 +41,11 @@
 	$password = "cDk-2WrRQM_U";
 	$bdd = "php";
 	
-	try {
-    	mysql_connect($serveur, $username, $password); 
- 		mysql_select_db($bdd); 
-    	}
-	catch(PDOException $e)
-		{
-    	echo "Connexion échouée: " . $e->getMessage();
-    	}
+	
+    $link=mysql_connect($serveur, $username, $password); 
+ 	mysql_select_db($bdd,$link) or die(mysql_error()); 
+    	
+
 	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
 	/*
 	while($article = $resultats->fetch())
