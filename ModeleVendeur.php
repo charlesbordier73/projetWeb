@@ -22,7 +22,7 @@ error_reporting(E_ALL);
         echo "totoModele";
         $login = $_POST['login'];
         echo $login;
-        $mdp = mysql_query("SELECT mdp from Vendeur where login='$login'");
+        $mdp = mysql_fetch_assoc(mysql_query("SELECT mdp from Vendeur where login='$login'"));
         echo $mdp;
             if($_POST['mdp']==$mdp){
 
