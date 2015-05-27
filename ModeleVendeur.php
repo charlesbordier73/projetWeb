@@ -21,6 +21,7 @@ error_reporting(E_ALL);
     if(isset($_POST['login']) && isset($_POST['mdp'])){
         echo "totoModele";
         $login = $_POST['login'];
+        echo $login;
         $mdp = mysql_query("SELECT mdp from Vendeur where login=$login");
             if($_POST['mdp']==$mdp){
 
