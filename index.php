@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL);
 include 'header.php';
-include 'ModeleVendeur.php';
 
 
 ?>
@@ -29,6 +28,15 @@ include 'ModeleVendeur.php';
     
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
     {
+    $serveur = "127.2.204.2";
+    $username = "adminEGbGpij";
+    $password = "cDk-2WrRQM_U";
+    $bdd = "php";
+
+   // connexion
+    $link=mysql_connect($serveur, $username, $password); 
+    mysql_select_db($bdd,$link) or die(mysql_error()); 
+    
     	$idclient = $_COOKIE['id'];
     	echo $idclient;
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
