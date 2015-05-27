@@ -22,11 +22,11 @@ error_reporting(E_ALL);
         echo "totoModele";
         $login = $_POST['login'];
         echo $login;
-        $mdp = mysql_query("SELECT mdp from Vendeur where login=$login");
+        $mdp = mysql_query("SELECT mdp from Vendeur where login='$login'");
         echo $mdp;
             if($_POST['mdp']==$mdp){
 
-                $id=mysql_query("SELECT id from Vendeur where login=$login");
+                $id=mysql_query("SELECT id from Vendeur where login='$login'");
                 echo $id;
                 $tokenValue=sha1(uniqid(rand()));
                 setcookie("id",$id,time()+(3600),"/");
