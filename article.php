@@ -64,7 +64,6 @@ error_reporting(E_ALL);
 		<td><?php echo $article['description']; ?></td>
 		<td><?php echo $article['DateMiseEnLigne']; ?></td>
 	</tr>
-	<br>
 <?php }
 	$resultats->closeCursor();
 	mysql_close($link);?>
