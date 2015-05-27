@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Polycoin</title>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!-- Optional theme -->
@@ -18,17 +19,15 @@
  		<ul class="nav nav-pills">
 
  			<li>
- 				<a>Accueil</a>
+ 				<a href="index.php">Accueil</a>
  			</li>
  			
  			<li>
- 				<a href "./article.php">Articles</a>
+ 				<a href="article.php">Articles</a>
  			</li>
  			
  		</ul>
  		 	
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 </body>
 </html>
