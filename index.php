@@ -31,9 +31,8 @@ include 'header.php';
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$login = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
     	echo "Vous êtes connectés en tant que $login";
-
-    if(!isset($_COOKIE['id']) || !isset($_COOKIE['token'])){
-
+    }
+    else{
     ?>
 	<form method="POST" action="ControllerIndex.php">
 		<table>
