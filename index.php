@@ -36,16 +36,17 @@ include 'header.php';
    // connexion
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
-    
-    	$idclient = $_COOKIE['id'];
+
+    	$idclient = mysql_fetch_assoc($_COOKIE['id']);
     	echo $idclient;
-    	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
+    	$tokenTab = mysql_fetch_assoc(mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'"));
+    	$token = $tokenTab["token"];
     	echo $token;
-    	$loginTab = mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'");
+    	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
     	echo $loginTab;
     	echo $loginTab["login"];
-    	echo "Bonjour, vous êtes connectés en tant que ";
+    	echo "Bonjour, vous êtes connectés en tant que $login";
     }
     
     else{
