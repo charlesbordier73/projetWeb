@@ -31,6 +31,7 @@ include 'header.php';
     	$token = mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'");
     	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
+    	echo $login;
     	echo "Vous êtes connectés en tant que ";
     }
     
@@ -47,6 +48,7 @@ include 'header.php';
 				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" maxlength="50"><td>
 			</tr>
 		</table>
+		<br>
 	<input type="submit" value="Se connecter" name="envoyer">
 	</form>
 	<?php
