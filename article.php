@@ -50,7 +50,7 @@
     	echo "Connexion échouée: " . $e->getMessage();
     	}
 	$resultats = $connexion->query('SELECT "nomArticle", "description" FROM Article');
-	
+	/*
 	while($article = $resultats->fetch())
 	{
 ?>
@@ -61,7 +61,7 @@
 <?php }
 	$resultats->closeCursor();
 	$connexion=null;
-?>
+?>*/
 </table>
 
 
