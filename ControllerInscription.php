@@ -31,5 +31,16 @@ if(isset($_POST['mdp']))
 else
     $mdp="";
 
-echo 2;
+
+// vérification
+if(empty($nom) OR empty($prenom) OR empty($email) OR empty($tel) OR empty($login)) OR empty($mdp))
+    { 
+    echo '<font color="red">Attention, tous les champs sont obligatoires !!</font>'; 
+    } 
+
+else      
+    { 
+        echo "1";
+        //include 'ModeleInscription.php';
+    }  
 ?>
