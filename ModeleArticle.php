@@ -21,6 +21,7 @@ error_reporting(E_ALL);
 ?>
     <table>
     <tr>
+        <td><?php echo "toto";?>
         <td><?php echo $article['nomArticle']; ?></td>
         <td><?php echo $article['description']; ?></td>
         <td><?php echo $article['DateMiseEnLigne']; ?></td>
