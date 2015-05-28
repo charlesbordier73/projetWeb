@@ -28,11 +28,11 @@ include 'header.php';
 		<table>
 			<tr>
 				<td> Nom : </td> 
-				<td><input type="Name" name="nom" size="20" maxlength="50" required><td>
+				<td><input type="Name" name="nom" size="20" placeholder="Lagrange" maxlength="50" required><td>
 			</tr>
 			<tr>
 				<td> Prénom : </td>
-				<td><input type="Name" name="prenom" size="20" placeholder="Lagrange" maxlength="50" required></td>
+				<td><input type="Name" name="prenom" size="20" placeholder="Joe" maxlength="50" required></td>
 			</tr>
 			 <tr>
 				<td> Mail : </td>
