@@ -18,6 +18,7 @@ include 'header.php';
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
+
 <table border ="1">
     <tr>
         <th>Nom</th>
@@ -50,14 +51,11 @@ error_reporting(E_ALL);
         <td><?php echo $article['description']; ?></td>
         <td><?php echo $article['DateMiseEnLigne']; ?></td>
     </tr>
-    <?php
-    }
-    ?>
-    </table>
-<?php }
-    $resultats->closeCursor();
-    }
     
+    <?php 
+        }
+    $result->closeCursor();
+    } 
     mysql_close();  // on ferme la connexion 
-
-?>
+    ?>
+</table>

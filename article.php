@@ -23,7 +23,6 @@ include 'header.php';
 		<th>Nom</th>
 		<th>Description</th>
 		<th>Date</th>
-		<th></th>
 	</tr>
 	<?php
 	$serveur = "127.2.204.2";
