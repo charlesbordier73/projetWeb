@@ -50,7 +50,9 @@ error_reporting(E_ALL);
         <td><?php echo $article['description']; ?></td>
         <td><?php echo $article['DateMiseEnLigne']; ?></td>
     </tr>
+    <?php
     }
+    ?>
     </table>
 <?php }
     $resultats->closeCursor();
