@@ -36,7 +36,7 @@ include 'header.php';
 			</tr>
 			 <tr>
 				<td> Mail : </td>
-				<td><input type="E-mail" name="email" size="20" placeholder="mail@mail.mail" maxlength="50" required></td>
+				<td><input type="mail" name="email" size="20" placeholder="mail@mail.mail" maxlength="50" required></td>
 			</tr>
 			<tr>
 				<td> Tél : </td>
