@@ -35,7 +35,7 @@ include 'header.php';
 
    // connexion
     $link=mysql_connect($serveur, $username, $password); 
-    mysql_select_db($bdd,$link) or die(mysql_error()); 
+    mysql_select_db($bdd,$link) or die(mysql_error());
 
     	$idclient = $_COOKIE['id'];
     	$tokenTab = mysql_fetch_assoc(mysql_query("SELECT token FROM Vendeur WHERE id = '$idclient'"));

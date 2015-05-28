@@ -25,9 +25,16 @@
 		<li>
 			<a href="article.php">Articles</a>
 		</li>
-		<li>
-			<a href="ViewInscription.php">Inscription</a>
-		</li>
+		<?php
+		if(!isset($_COOKIE['id']) || !isset($_COOKIE['token']))
+		{
+			?>
+			<li>
+				<a href="ViewInscription.php">Inscription</a>
+			</li>
+			<?php
+		}
+		?>
 	</ul>
 	</header>
 </body>
