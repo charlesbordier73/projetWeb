@@ -1,3 +1,4 @@
+<table border ="1">
 <tr>
         <th>Nom</th>
         <th>Description</th>
@@ -23,7 +24,7 @@ error_reporting(E_ALL);
         while($article = mysql_fetch_array($result))
     {
 ?>
-    <table border ="1">
+
     <tr>
         <td><?php echo $article['nomArticle']; ?></td>
         <td><?php echo $article['description']; ?></td>
