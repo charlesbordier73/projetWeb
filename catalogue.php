@@ -1,4 +1,8 @@
 <?php
+if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
+{
+	include 'header.php';
+}
 include 'articleCo.php';
 echo "catalogue.php";
 
