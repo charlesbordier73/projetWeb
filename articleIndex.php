@@ -26,7 +26,7 @@ include 'header.php';
     }
     else
     {
-    	include 'articlePasCo.php';
+    	include 'catalogue.php';
 
     }
    	?>
