@@ -15,9 +15,9 @@ error_reporting(E_ALL);
         echo "toto";
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where nomArticle LIKE '%$name%'";
          // on insère les informations du formulaire dans la table 
-        mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        $result = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         echo "totar";
-        while($article = mysql_fetch_array($sql))
+        while($article = mysql_fetch_array($result))
     {
 ?>
     <table>
