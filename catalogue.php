@@ -5,7 +5,7 @@ echo "catalogue.php";
 
 ?>
 
-<form method="POST" action="ControllerArticles.php">
+<form method="POST" action="ControllerArticle.php">
 	<table>
 		<tr>
 			<td> Nom de l'article : </td> 
