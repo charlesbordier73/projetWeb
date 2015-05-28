@@ -28,7 +28,7 @@ include 'header.php';
 		<table>
 			<tr>
 				<td> Nom : </td> 
-				<td><input type="text" name="nom" size="20" required="" maxlength="50"><td>
+				<td><input type="Name" name="nom" size="20" required="" maxlength="50"><td>
 			</tr>
 			<tr>
 				<td> Prénom : </td>
@@ -36,7 +36,7 @@ include 'header.php';
 			</tr>
 			 <tr>
 				<td> Mail : </td>
-				<td><input type="mail" name="email" size="20" placeholder="mail@mail.mail" required="" maxlength="50"></td>
+				<td><input type="E-mail" name="email" size="20" placeholder="mail@mail.mail" required="" maxlength="50"></td>
 			</tr>
 			<tr>
 				<td> Tél : </td>
