@@ -1,7 +1,7 @@
 <?php
 	
-    setcookie("id","",0,"/");
-    setcookie("token","",0,"/");
+	setcookie("id", "", time()-3600);
+	unset($_COOKIE['token']);
     //header('Location:index.php');
 	echo "toto";
 	echo $_COOKIE['id'];
