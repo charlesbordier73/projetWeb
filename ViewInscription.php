@@ -28,27 +28,27 @@ include 'header.php';
 		<table>
 			<tr>
 				<td> Nom : </td> 
-				<td><input type="text" name="nom" size="20" placeholder="Jean" maxlength="50"><td>
+				<td><input type="text" name="nom" size="20" placeholder="Jean" required="" maxlength="50"><td>
 			</tr>
 			<tr>
 				<td> Prénom : </td>
-				<td><input type="text" name="prenom" size="20" placeholder="Lagrange" maxlength="50"></td>
+				<td><input type="text" name="prenom" size="20" placeholder="Lagrange" required="" maxlength="50"></td>
 			</tr>
 			 <tr>
 				<td> Mail : </td>
-				<td><input type="mail" name="email" size="20" placeholder="mail@mail.mail" maxlength="50"></td>
+				<td><input type="mail" name="email" size="20" placeholder="mail@mail.mail" required="" maxlength="50"></td>
 			</tr>
 			<tr>
 				<td> Tél : </td>
-				<td><input type="tel" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10"></td>
+				<td><input type="tel" name="tel" size="20" placeholder="XXXXXXXXXX" required="" maxlength="10"></td>
 			</tr>
 			<tr>
 				<td> Login : </td>
-				<td><input type="text" name="login" size="20" placeholder="Votre login" maxlength="50"></td>
+				<td><input type="text" name="login" size="20" placeholder="Votre login" required="" maxlength="50"></td>
 			</tr>
 			<tr>
 				<td> Mot de passe : </td>
-				<td><input type="password" name="mdp" size="20" placeholder="Votre mot de passe" maxlength="50"></td>
+				<td><input type="password" name="mdp" size="20" placeholder="Votre mot de passe" required="" maxlength="50"></td>
 			</tr>
 		</table>
 		<br>
