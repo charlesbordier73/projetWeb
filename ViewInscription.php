@@ -40,7 +40,7 @@ include 'header.php';
 			</tr>
 			<tr>
 				<td> Tél : </td>
-				<td><input type="text" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10" required></td>
+				<td><input type="tel" name="tel" size="20" placeholder="XXXXXXXXXX" maxlength="10" required></td>
 			</tr>
 			<tr>
 				<td> Login : </td>

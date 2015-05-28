@@ -1,3 +1,9 @@
+<?php
+error_reporting(E_ALL);
+include 'header.php';
+
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -11,32 +17,20 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 	
+ 	<?php
+ 	if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
+    {
+    	include 'articleCo.php';
+
+    }
+    else
+    {
+    	include 'articlePasCo.php';
+
+    }
+   	?>
 
 
-</head>
-<body>
- 	<header><b>Bienvenue sur le PolyCoin</b>
-	<ul class="nav nav-pills">
-
-		<li>
-			<a href="index.php">Accueil</a>
-		</li>
-		
-		<li>
-			<a href="articleIndex.php">Articles</a>
-		</li>
-		<?php
-		if(!isset($_COOKIE['id']) || !isset($_COOKIE['token']))
-		{
-			?>
-			<li>
-				<a href="ViewInscription.php">Inscription</a>
-			</li>
-			<?php
-		}
-		?>
-	</ul>
-	</header>
 </body>
 </html>
- 		 
