@@ -1,11 +1,11 @@
 <?php
-if(isset($_POST['name']))
-    $name=$_POST['name'];
+if(isset($_GET['name']))
+    $name=$_GET['name'];
 else
     $name="";
 
 // vérification
-if(empty($name)
+if(empty($name))
     { 
         echo '<font color="red">Attention, remplissez bien le champs !!</font>'; 
     }

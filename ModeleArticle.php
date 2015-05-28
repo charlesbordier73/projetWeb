@@ -11,8 +11,8 @@ error_reporting(E_ALL);
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
-    if(isset($_POST['name'])){
-        $sql = "SELECT idVendeur, nomArticle, description from Article where nomArticle in '$name";
+    if(isset($name)){
+        $sql = "SELECT idVendeur, nomArticle, description from Article where nomArticle LIKE '%$name%'";
          // on insère les informations du formulaire dans la table 
         mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
