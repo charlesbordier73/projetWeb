@@ -1,8 +1,9 @@
 <?php
 	
-	unset($_COOKIE['id']);
-	unset($_COOKIE['token']);
+    setcookie("id","",0,"/");
+    setcookie("token","",0,"/");
     //header('Location:index.php');
 	echo "toto";
+	echo $_COOKIE['id'];
 ?>
 
