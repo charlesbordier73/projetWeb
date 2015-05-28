@@ -1,5 +1,5 @@
 <?php
 include 'header.php';
-include 'articleIndex.php';
+include 'articleCo.php';
 echo "catalogue.php";
 ?>
