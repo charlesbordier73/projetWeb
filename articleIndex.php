@@ -26,13 +26,8 @@ include 'header.php';
     }
     else
     {
-    	?>
-    	<ul class="nav nav-pills">
-			<li>
-				<a href="catalogue.php">Catalogue</a>
-			</li>
-		</ul>
-		<?php
+    	include 'catalogue.php';
+
     }
    	?>
 
