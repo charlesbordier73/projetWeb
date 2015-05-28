@@ -19,7 +19,7 @@ include 'header.php';
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <table border ="1">
-<tr>
+    <tr>
         <th>Nom</th>
         <th>Description</th>
         <th>Date</th>
@@ -50,6 +50,7 @@ error_reporting(E_ALL);
         <td><?php echo $article['description']; ?></td>
         <td><?php echo $article['DateMiseEnLigne']; ?></td>
     </tr>
+    }
     </table>
 <?php }
     $resultats->closeCursor();
