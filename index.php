@@ -43,6 +43,14 @@ include 'header.php';
     	$loginTab = mysql_fetch_assoc(mysql_query("SELECT login FROM Vendeur WHERE id = '$idclient'"));
     	$login=$loginTab["login"];
     	echo "Bonjour, vous êtes connectés en tant que : $login !";
+
+    	?>
+
+    	<form method="POST" action="deconnexion.php">
+    		<input type="submit" value="Déconnexion" name="envoyer">
+    	</form>
+
+    	<?php
     }
     
     else{
@@ -51,11 +59,11 @@ include 'header.php';
 		<table>
 			<tr>
 				<td> Login : </td> 
-				<td><input type="text" name="login" size="20" placeholder="login" maxlength="50"><td>
+				<td><input type="text" name="login" size="20" placeholder="login" required="" maxlength="50"><td>
 			</tr>
 			<tr>
 				<td> Mdp : </td> 
-				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" maxlength="50"><td>
+				<td><input type="password" name="mdp" size="20" placeholder="motdepasse" required="" maxlength="50"><td>
 			</tr>
 		</table>
 		<br>
