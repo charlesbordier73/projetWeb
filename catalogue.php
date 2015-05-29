@@ -1,7 +1,7 @@
 <?php
 /*if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
 {*/
-	include 'header.php';
+	include_once'header.php';
 //}
 include 'articleCo.php';
 
