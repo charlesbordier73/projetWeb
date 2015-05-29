@@ -23,7 +23,6 @@ echo "catalogue.php";
 
 <?php
 if(isset($_GET['name'])){
-	include "ControllerArticle.php";
 
 ?>
 	<table border ="1">
