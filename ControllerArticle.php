@@ -13,7 +13,6 @@ if(empty($name))
 
 else      
     { 
-        echo "toto";
         include 'ModeleArticle.php';
         include 'catalogue.php';
 
