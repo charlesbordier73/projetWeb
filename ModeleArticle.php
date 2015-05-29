@@ -36,20 +36,7 @@ error_reporting(E_ALL);
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where nomArticle LIKE '%$name%'";
          // on insère les informations du formulaire dans la table 
         $result = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-        while($article = mysql_fetch_array($result))
-    {
-?>
-
-    <tr>
-        <td><?php echo $article['nomArticle']; ?></td>
-        <td><?php echo $article['description']; ?></td>
-        <td><?php echo $article['DateMiseEnLigne']; ?></td>
-    </tr>
     
-    <?php 
-        }
-    $result->closeCursor();
     } 
     mysql_close();  // on ferme la connexion 
-    ?>
-</table>
+?>
