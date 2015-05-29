@@ -19,7 +19,6 @@ echo "catalogue.php";
 </form>
 
 <br>
-<br>
 
 <?php
 if(isset($_GET['name'])){
@@ -36,7 +35,6 @@ if(isset($_GET['name'])){
 	
 	while($article = mysql_fetch_array($result))
 		{
-			echo "toto";
 		?>
 
 			<tr>
