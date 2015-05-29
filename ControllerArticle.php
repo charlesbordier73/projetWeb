@@ -9,7 +9,6 @@ if(empty($name))
     { 
         echo '<font color="red">Attention, remplissez bien le champs !!</font>'; 
     }
-    echo "toto";
 
 
 else      
@@ -20,7 +19,6 @@ else
     }
 
  if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-    echo "toto1";
  	include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
