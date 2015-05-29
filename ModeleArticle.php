@@ -19,12 +19,6 @@ include 'header.php';
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
-<table border ="1">
-    <tr>
-        <th>Nom</th>
-        <th>Description</th>
-        <th>Date</th>
-    </tr>
 <?php
 
 error_reporting(E_ALL);

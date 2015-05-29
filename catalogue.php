@@ -18,4 +18,34 @@ echo "catalogue.php";
 	</table>
 </form>
 
-		
+<br>
+<br>
+
+<table border ="1">
+    <tr>
+        <th>Nom</th>
+        <th>Description</th>
+        <th>Date</th>
+    </tr>
+<?php
+
+include "ControllerArticle.php";
+
+while($article = mysql_fetch_array($result))
+    {
+?>
+
+    <tr>
+        <td><?php echo $article['nomArticle']; ?></td>
+        <td><?php echo $article['description']; ?></td>
+        <td><?php echo $article['DateMiseEnLigne']; ?></td>
+    </tr>
+    
+    <?php 
+        }
+    $result->closeCursor();
+    }  
+    ?>
+</table>
+
+?>
