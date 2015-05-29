@@ -1,4 +1,5 @@
-<?php
+<?php 
+
 include_once'header.php';
 
 include 'articleCo.php';

@@ -33,9 +33,9 @@ error_reporting(E_ALL);
     if(isset($name)){
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where nomArticle LIKE '%$name%'";
         $result = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-    
+        echo "totorqt";
     }
-            echo "totorqt";
+
 
 
     else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
