@@ -22,7 +22,6 @@ include 'header.php';
  	if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
     {
     	include 'articleCo.php';
-    	include 'ControllerArticle';
 
     }
     else
