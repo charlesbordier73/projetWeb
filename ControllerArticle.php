@@ -17,10 +17,8 @@ else
         include 'catalogue.php';
 
     }
-    echo "toto";
 
  if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-    echo "toto1";
  	include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }

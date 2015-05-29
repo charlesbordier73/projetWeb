@@ -31,8 +31,9 @@ if(isset($_GET['name'])){
 <?php
 	
 	while($article = mysql_fetch_array($result))
-		echo "string";		
-	?>
+		{
+		?>
+
 			<tr>
 			    <td><?php echo $article['nomArticle']; ?></td>
 			    <td><?php echo $article['description']; ?></td>
