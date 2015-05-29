@@ -14,5 +14,7 @@ if(empty($name))
 else      
     { 
         include 'ModeleArticle.php';
+        header('Location:catalogue.php');
+
     }  
 ?>
