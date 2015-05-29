@@ -27,6 +27,7 @@ echo "catalogue.php";
         <th>Description</th>
         <th>Date</th>
     </tr>
+
 <?php
 
 include "ControllerArticle.php";
@@ -44,8 +45,7 @@ while($article = mysql_fetch_array($result))
     <?php 
         }
     $result->closeCursor();
-    }  
+    } 
     ?>
 </table>
 
-?>
