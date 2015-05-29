@@ -13,7 +13,7 @@ if(!empty($name))
 
     }
 
-if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
