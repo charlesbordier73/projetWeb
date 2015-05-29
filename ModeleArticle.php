@@ -31,7 +31,7 @@ error_reporting(E_ALL);
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && empty($name)){
-        $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
+        $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where idVendeur= 101";
         $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 
     }
