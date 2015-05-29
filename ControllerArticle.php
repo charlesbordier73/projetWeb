@@ -1,4 +1,10 @@
 <?php
+
+ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+    include 'ModeleArticle.php';
+    include 'mesArticles.php'; 
+ }
+
 if(isset($_GET['name']))
     $name=$_GET['name'];
 else
@@ -9,8 +15,6 @@ if(empty($name))
     { 
         echo '<font color="red">Attention, remplissez bien le champs !!</font>'; 
     }
-
-
 else      
     { 
         include 'ModeleArticle.php';
@@ -18,9 +22,5 @@ else
 
     }
 
- if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
- 	include 'ModeleArticle.php';
-    include 'mesArticles.php'; 
- }
 
 ?>
