@@ -29,23 +29,25 @@ echo "catalogue.php";
     </tr>
 
 <?php
+if(isset($_GET['name'])){
+	include "ControllerArticle.php";
 
-include "ControllerArticle.php";
+	while($article = mysql_fetch_array($result))
+		{
+		?>
 
-while($article = mysql_fetch_array($result))
-    {
+			<tr>
+			    <td><?php echo $article['nomArticle']; ?></td>
+			    <td><?php echo $article['description']; ?></td>
+			    <td><?php echo $article['DateMiseEnLigne']; ?></td>
+			</tr>
+
+		<?php 
+		}
+		$result->closeCursor();
+} 
+
+
 ?>
-
-    <tr>
-        <td><?php echo $article['nomArticle']; ?></td>
-        <td><?php echo $article['description']; ?></td>
-        <td><?php echo $article['DateMiseEnLigne']; ?></td>
-    </tr>
-    
-    <?php 
-        }
-    $result->closeCursor();
-    } 
-    ?>
 </table>
 
