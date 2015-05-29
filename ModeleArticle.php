@@ -37,6 +37,7 @@ error_reporting(E_ALL);
     }
 
     else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+        echo "totorqt";
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
         $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 
