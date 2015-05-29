@@ -14,7 +14,6 @@ if(!empty($name))
 
 } 
 else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-    echo "toto7";
     include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
