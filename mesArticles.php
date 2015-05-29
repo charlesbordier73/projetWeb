@@ -15,7 +15,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 <?php
 	while($mesArticles = mysql_fetch_array($resultats))
 		{
-			echo "toto";
 		?>
 
 			<tr>
