@@ -47,9 +47,11 @@ if(isset($_GET['name'])){
 		<?php 
 		}
 		$result->closeCursor();
+	?>
+	</table>
+	<?php
 } 
 
 
 ?>
-</table>
 
