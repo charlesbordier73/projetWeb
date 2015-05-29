@@ -37,7 +37,6 @@ error_reporting(E_ALL);
 
 
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && empty($name)){
-        echo "toto";
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
         $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         print_r($resultats);
