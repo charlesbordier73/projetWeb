@@ -9,6 +9,7 @@ if(empty($name))
     { 
         echo '<font color="red">Attention, remplissez bien le champs !!</font>'; 
     }
+    echo "toto";
 
 
 else      
@@ -17,7 +18,6 @@ else
         include 'catalogue.php';
 
     }
-    echo "toto";
 
  if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     echo "toto1";
