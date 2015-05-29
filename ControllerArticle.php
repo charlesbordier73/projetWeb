@@ -14,6 +14,5 @@ if(empty($name))
 else      
     { 
         include 'ModeleArticle.php';
-
     }  
 ?>

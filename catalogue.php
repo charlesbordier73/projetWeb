@@ -4,6 +4,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token']))
 	include 'header.php';
 }
 include 'articleCo.php';
+include "ControllerArticle.php";
 echo "catalogue.php";
 
 ?>
@@ -32,7 +33,7 @@ if(isset($_GET['name'])){
 	    </tr>
 
 <?php
-	include "ControllerArticle.php";
+
 
 	while($article = mysql_fetch_array($result))
 		{
