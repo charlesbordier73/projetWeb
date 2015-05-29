@@ -17,8 +17,8 @@ else
         include 'catalogue.php';
 
     }
-    
-if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+
+if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && !isset($_GET['name'])){
     include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
