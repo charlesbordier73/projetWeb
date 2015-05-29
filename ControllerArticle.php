@@ -19,7 +19,6 @@ else
     }
 
  else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-    echo "toto2";
  	include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
