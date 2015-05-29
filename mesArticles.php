@@ -13,7 +13,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 	    </tr>
 
 <?php
-	echo "toto";
 	while($mesArticles = mysql_fetch_array($resultats))
 		{
 		?>
