@@ -1,9 +1,8 @@
 <?php
 include 'header.php';
 include 'articleCo.php';
-echo "mesArticles.php";
 
- if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 
 ?>
 	<table border ="1">
