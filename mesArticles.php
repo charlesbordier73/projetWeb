@@ -26,7 +26,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 
 		<?php 
 		}
-		$result->closeCursor();
+		$resultats->closeCursor();
 	?>
 	</table>
 	<?php
