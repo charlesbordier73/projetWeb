@@ -18,7 +18,7 @@ else
 
     }
 
- else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
  	include 'ModeleArticle.php';
     include 'mesArticles.php'; 
  }
