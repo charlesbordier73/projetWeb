@@ -37,6 +37,7 @@ if(isset($_GET['name'])){
 	
 	while($article = mysql_fetch_array($result))
 		{
+			echo "toto";
 		?>
 
 			<tr>
