@@ -34,6 +34,7 @@ error_reporting(E_ALL);
         echo "tototar";
         $sql = "SELECT idVendeur, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
         $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        print_r($resultats);
 
     }
 
