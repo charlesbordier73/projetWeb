@@ -8,6 +8,7 @@ else
 
 if(!empty($name))      
     { 
+        echo "toto";
         include 'ModeleArticle.php';
         include 'catalogue.php';
 
