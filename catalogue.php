@@ -21,15 +21,17 @@ echo "catalogue.php";
 <br>
 <br>
 
-<table border ="1">
-    <tr>
-        <th>Nom</th>
-        <th>Description</th>
-        <th>Date</th>
-    </tr>
-
 <?php
 if(isset($_GET['name'])){
+?>
+	<table border ="1">
+	    <tr>
+	        <th>Nom</th>
+	        <th>Description</th>
+	        <th>Date</th>
+	    </tr>
+
+<?php
 	include "ControllerArticle.php";
 
 	while($article = mysql_fetch_array($result))
