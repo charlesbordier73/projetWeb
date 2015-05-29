@@ -16,5 +16,11 @@ else
         include 'ModeleArticle.php';
         include 'catalogue.php';
 
-    }  
+    }
+
+ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+ 	include 'ModeleArticle.php';
+    include 'mesArticles.php'; 
+ }
+
 ?>
