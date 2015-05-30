@@ -33,7 +33,7 @@ include 'header.php';
             <tr>
                 <td> Description : </td>
                 <td><input type="text" name="descr" size="20" value="<?php echo $descrArticle;?>" maxlength="50" required></td>
-                <input type="hidden" value="<?php echo $idArtcile;?>" name="id">
+                <input type="hidden" value="<?php echo $idArtcile;?>" name="idArticle">
 
         </table>
         <br>

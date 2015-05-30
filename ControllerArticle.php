@@ -28,6 +28,9 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }
     else if(isset($_POST['validationModif'])){
         echo "toto";
+        $idArticleMod=$_POST['id'];
+        $nomArticleMod=$_POST['nom'];
+        $descrArticleMod=$_POST['descr'];
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
