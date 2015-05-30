@@ -34,6 +34,8 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 				<td>	
 			    	<form method="POST" action="ControllerArticle.php">
 						<input type="submit" value="Supprimer" name="supprimer">
+						<input type="hidden" value=<?php  $mesArticles['idArticle'];?> name="id">
+
 					</form>
 				</td>
 			</tr>
