@@ -14,8 +14,14 @@ if(!empty($name))
 
 } 
 else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-    include 'ModeleArticle.php';
+    if(isset($_POST['supprimer'])){
+        echo "toto";
+    }
+    else{
+        include 'ModeleArticle.php';
     include 'mesArticles.php'; 
+    }
+    
  }
 
 
