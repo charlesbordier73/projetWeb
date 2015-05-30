@@ -39,7 +39,7 @@ if(isset($_GET['name'])){
 			<tr>
 				<td>
 				<?php
-				print_r(mysql_fetch_array($images));
+				print_r(mysql_fetch_array($images[1]));
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$article['idArticle']){
 						//print_r($img[1]);
