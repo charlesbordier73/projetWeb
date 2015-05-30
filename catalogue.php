@@ -43,6 +43,7 @@ if(isset($_GET['name'])){
 					if($img['idArticle']==$article){
 						?>
 							<img src="<?php echo $img['url'];?>" alt="" />
+						<?php
 					}
 				}
 				?>
