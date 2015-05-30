@@ -12,6 +12,7 @@ error_reporting(E_ALL);
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && !empty($idArticle)){
+        echo $idArticle;
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         mysql_query($sql);
     }
