@@ -41,7 +41,7 @@ if(isset($_GET['name'])){
 				<?php
 				$img=mysql_fetch_array($images);
 				echo "toto";
-				print_r($img[1][0]);
+				print_r($img[1]);
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$article['idArticle']){
 						//print_r($img[1]);
