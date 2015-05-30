@@ -28,7 +28,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     else if(isset($_POST['validationModif'])){
         $idArticleMod=$_POST['idModif'];
         $nomArticleMod=htmlspecialchars($_POST['nom']);
-        $descrArticleMod=htmlspecialchars($_POST['descr']);
+        $descrArticleMod=mysql_escape_string($_POST['descr']);
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
