@@ -32,7 +32,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idmod">
 						<input type="hidden" value="<?php echo $mesArticles['nomArticle'];?>" name="nom">
 						<input type="hidden" value="<?php echo $mesArticles['description'];?>" name="descr">
-						<?php echo $mesArticles['idArticle'];?>
 					</form>
 				</td>
 				<td>	
