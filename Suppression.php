@@ -11,9 +11,9 @@ error_reporting(E_ALL);
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
-    if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && isset($_POST['supprimer']));
+    if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && isset($_POST['id']));
 )){
-        $id=$_POST['supprimer'];
+        $id=$_POST['id'];
         $sql = "DELETE from Article where idArticle= '$id'";
         mysql_query($sql);
 
