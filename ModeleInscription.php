@@ -13,7 +13,7 @@ error_reporting(E_ALL);
         
      
     if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['tel']) && isset($_POST['login']) && isset($_POST['mdp'])){
-        $sql = "INSERT INTO Vendeur(nom, prenom, mail, tel, login, mdp, categorie) VALUES('$nom', '$prenom', '$email', '$tel', '$login', '$mdp', 'Novice')";
+        $sql = "INSERT INTO Vendeur(nom, prenom, mail, tel, login, mdp, categorie) VALUES('$nom', '$prenom', '$email', '$tel', '$login', '$mdp', 1)";
          // on insère les informations du formulaire dans la table 
         mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
