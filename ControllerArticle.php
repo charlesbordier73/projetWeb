@@ -26,6 +26,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'Modification.php';
 
         if(isset($_POST['validationModif'])){
+            echo "toto";
             include 'ModeleArticle.php';
             include 'mesArticles.php'; 
         }
