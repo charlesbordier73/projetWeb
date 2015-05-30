@@ -29,7 +29,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			    <td>	
 			    	<form method="POST" action="ControllerArticle.php">
 						<input type="submit" value="Modifier" name="modifier">
-						<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="id">
+						<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idmod">
 						<input type="hidden" value="<?php echo $mesArticles['nomArticle'];?>" name="nom">
 						<input type="hidden" value="<?php echo $mesArticles['description'];?>" name="descr">
 					</form>
