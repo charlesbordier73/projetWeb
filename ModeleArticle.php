@@ -14,7 +14,7 @@ error_reporting(E_ALL);
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && empty($name)){
         if(isset($_POST['validationModif'])){
             echo "totar";
-            echo $descrArticleMod;
+            echo $idArticleMod;
 
             $sql="UPDATE Article SET nomArticle = '$nomArticleMod', description = '$descrArticleMod' WHERE idArticle='$idArticleMod'";
             mysql_query($sql);
