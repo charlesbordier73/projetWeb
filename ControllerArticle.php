@@ -2,7 +2,7 @@
 
  
 if(isset($_GET['name']))
-    $name=$_GET['name'];
+    $name=mysql_escape_string($_GET['name']);
 else
     $name="";
 
