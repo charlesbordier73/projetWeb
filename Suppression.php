@@ -14,7 +14,7 @@ error_reporting(E_ALL);
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && isset($_POST['supprimer']));
 )){
         $id=$_POST['supprimer'];
-        $sql = "DELETE * from Article where idArticle= '$id'";
+        $sql = "DELETE from Article where idArticle= '$id'";
         mysql_query($sql);
 
     mysql_close();  // on ferme la connexion 
