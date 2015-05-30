@@ -37,6 +37,7 @@ if(isset($_GET['name'])){
 		?>
 
 			<tr>
+				<td>
 				<?php
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$article){
@@ -44,6 +45,7 @@ if(isset($_GET['name'])){
 					}
 				}
 				?>
+				</td>
 			    <td><?php echo $article['nomArticle']; ?></td>
 			    <td><?php echo $article['description']; ?></td>
 			    <td><?php echo $article['DateMiseEnLigne']; ?></td>
