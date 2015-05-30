@@ -29,6 +29,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $idArticleMod=$_POST['idArticle'];
         $nomArticleMod=$_POST['nom'];
         $descrArticleMod=$_POST['descr'];
+        echo $idArticleMod:
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
