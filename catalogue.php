@@ -41,6 +41,7 @@ if(isset($_GET['name'])){
 				<?php
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$article['idArticle']){
+						print_r($img[1]);
 
 						?>
 							<img src="<?php echo $img['url'][1];?>" width="200" height="150" alt="" />
