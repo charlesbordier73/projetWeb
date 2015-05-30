@@ -20,6 +20,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'mesArticles.php';
     }   
     else if(isset($_POST['modifier'])){
+        echo "dardar";
         $idArticle=$_POST['id'];
         $nomArticle=$_POST['nom'];
         $descrArticle=$_POST['descr'];
