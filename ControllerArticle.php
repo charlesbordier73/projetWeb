@@ -20,7 +20,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'mesArticles.php';
     }   
     else if(isset($_POST['modifier'])){
-        $idArticle=$_POST['id'];
+        $idArticle=$_POST['idmod'];
         echo "test2";
         echo $idArticle;
         $nomArticle=$_POST['nom'];
