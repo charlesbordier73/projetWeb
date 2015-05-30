@@ -18,7 +18,7 @@ error_reporting(E_ALL);
         }
         else{
             $id=$_COOKIE['id'];
-            $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
+            $sql = "SELECT idVendeur, a.idArticle, nomArticle, description, DateMiseEnLigne, a.url from Article a, Images i where idVendeur= '$id' and a.idArticle=i.idArticle";
             $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
     }
