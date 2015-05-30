@@ -27,12 +27,12 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			    <td><?php echo $mesArticles['description']; ?></td>
 			    <td><?php echo $mesArticles['DateMiseEnLigne']; ?></td>
 			    <td>	
-			    	<form method="GET" action="ControllerArticle.php">
+			    	<form method="POST" action="ControllerArticle.php">
 						<input type="submit" value="Modifier" name="modifier">
 					</form>
 				</td>
 				<td>	
-			    	<form method="GET" action="ControllerArticle.php">
+			    	<form method="POST" action="ControllerArticle.php">
 						<input type="submit" value="Supprimer" name="supprimer">
 					</form>
 				</td>
