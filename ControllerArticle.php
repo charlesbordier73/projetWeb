@@ -31,7 +31,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $idArticleMod=$_POST['idModif'];
         $nomArticleMod=$_POST['nom'];
         $descrArticleMod=$_POST['descr'];
-        eho "test3";
+        echo "test3";
         echo $idArticleMod;
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
