@@ -13,8 +13,8 @@ error_reporting(E_ALL);
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && empty($name)){
         if(isset($_POST['validationModif'])){
-            $sql=mysql_real_escape_string("UPDATE Article SET nomArticle = '$nomArticleMod', description = '$descrArticleMod' WHERE idArticle='$idArticleMod'");
-            mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+            $sql="UPDATE Article SET nomArticle = '$nomArticleMod', description = '$descrArticleMod' WHERE idArticle='$idArticleMod'";
+            mysql_query(mysql_real_escape_string($sql)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         }
         else{
             $id=$_COOKIE['id'];
