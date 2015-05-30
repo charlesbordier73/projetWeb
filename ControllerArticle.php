@@ -15,7 +15,7 @@ if(!empty($name))
 } 
 else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     if(isset($_POST['supprimer'])){
-        //$idArticle=$_POST['id'];
+        $idArticle=$_POST['id'];
         include 'mesArticles.php';
         include 'Suppression.php';
 
