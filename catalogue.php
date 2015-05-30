@@ -40,11 +40,12 @@ if(isset($_GET['name'])){
 				<td>
 				<?php
 				while($img = mysql_fetch_array($images)){
+					echo  $img['url'][0];
 					if($img['idArticle']==$article['idArticle']){
 						?>
 							<img src="<?php echo $img['url'][0];?>" width="200" height="150" alt="" />
 						<?php
-							echo  $img['url'][0];
+							
 					}
 				}
 				?>
