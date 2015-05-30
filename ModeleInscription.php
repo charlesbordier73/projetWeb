@@ -13,7 +13,8 @@ error_reporting(E_ALL);
         
      
     if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['tel']) && isset($_POST['login']) && isset($_POST['mdp'])){
-        mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        //$sql = "INSERT INTO Vendeur(nom, prenom, mail, tel, login, mdp) VALUES('$nom', '$prenom', '$email', '$tel', '$login', '$mdp')";
+        //mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
 
     if(isset($_POST['login'])  && isset($_POST['mdp'])){
