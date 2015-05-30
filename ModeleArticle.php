@@ -12,16 +12,22 @@ error_reporting(E_ALL);
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && empty($name)){
-        $id=$_COOKIE['id'];
-        $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
-        $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-
+        if(isset($_POST['validationModif'])){
+            $sql="UPDATE Article SET nomArticle = '$nomArticle', description = '$descrArticle' WHERE idArticle='$idArticle'";
+            mysql_query($sql);
+        }
+        else{
+            $id=$_COOKIE['id'];
+            $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
+            $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+    }
     }
 
     if(isset($name) && !empty($name)){
         $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where nomArticle LIKE '%$name%'";
         $result = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     }
+
 
 
     mysql_close();  // on ferme la connexion 
