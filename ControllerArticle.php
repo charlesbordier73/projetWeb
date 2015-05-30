@@ -24,13 +24,13 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $nomArticle=$_POST['nom'];
         $descrArticle=$_POST['descr'];
         include 'Modification.php';
-
-        if(isset($_POST['validationModif'])){
-            echo "toto";
-            include 'ModeleArticle.php';
-            include 'mesArticles.php'; 
-        }
     }
+    else if(isset($_POST['validationModif'])){
+        echo "toto";
+        include 'ModeleArticle.php';
+        include 'mesArticles.php'; 
+    }
+    
     else{
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
