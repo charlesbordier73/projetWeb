@@ -38,7 +38,7 @@ include 'header.php';
         </table>
         <br>
         <br>
-        <input type="submit" value="Modifier" name="vaidationModif">
+        <input type="submit" value="Modifier" name="validationModif">
     </form>
         
     </center>
