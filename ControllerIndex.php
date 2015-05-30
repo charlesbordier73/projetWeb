@@ -1,11 +1,11 @@
 <?php
 if(isset($_POST['login']))
-    $login=$_POST['login'];
+    $login=htmlspecialchars($_POST['login']);
 else
     $login="";
 
 if(isset($_POST['mdp']))
-    $mdp=$_POST['mdp'];
+    $mdp=htmlspecialchars($_POST['mdp']);
 else
     $mdp="";
 

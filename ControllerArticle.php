@@ -21,14 +21,14 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }   
     else if(isset($_POST['modifier'])){
         $idArticle=$_POST['idmod'];
-        $nomArticle=$_POST['nom'];
-        $descrArticle=$_POST['descr'];
+        $nomArticle=htmlspecialchars($_POST['nom']);
+        $descrArticle=htmlspecialchars($_POST['descr']);
         include 'Modification.php';
     }
     else if(isset($_POST['validationModif'])){
         $idArticleMod=$_POST['idModif'];
-        $nomArticleMod=$_POST['nom'];
-        $descrArticleMod=$_POST['descr'];
+        $nomArticleMod=htmlspecialchars($_POST['nom']);
+        $descrArticleMod=htmlspecialchars($_POST['descr']);
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
