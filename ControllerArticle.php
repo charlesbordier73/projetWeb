@@ -33,7 +33,6 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'mesArticles.php'; 
     }
     else if(isset($_POST['ajouter'])){
-        echo "toto";
         include 'AjoutArticle.php';
     }
     else if(isset($_POST['validationAjout'])){

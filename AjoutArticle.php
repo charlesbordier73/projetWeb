@@ -38,7 +38,7 @@ include 'header.php';
             </tr>
             <tr>
                 <td> Image : </td>
-                <td><input type="file"  name="lien" accept="./image/*" ></td>
+                <td><input type="file"  name="lien"></td>
             </tr>
                 <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAjout">
                 <input type="hidden" value="<?php echo gmdate('Y-m-d');?>" name="date">
