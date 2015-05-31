@@ -12,7 +12,12 @@ if(!empty($name))
         include 'ModeleArticle.php';
         include 'catalogue.php';
 
-} 
+}
+else if(isset($_POST['detailArt'])){
+    include 'ModeleArticle.php';
+    include 'details.php';
+}
+
 else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     if(isset($_POST['supprimer'])){
         $idArticle=$_POST['id'];
@@ -45,10 +50,6 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
 
-    }
-    else if(isset($_POST['detailArt'])){
-        include 'ModeleArticle.php';
-        include 'details.php';
     }
     else if(isset($_POST['afficher'])){
 
