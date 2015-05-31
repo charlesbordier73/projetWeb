@@ -16,14 +16,14 @@ error_reporting(E_ALL);
             $sql="UPDATE Article SET nomArticle = '$nomArticleMod', description = '$descrArticleMod' WHERE idArticle='$idArticleMod'";
             mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         }
-        else if(isset($_POST['validationAjout'])){/*
+        else if(isset($_POST['validationAjout'])){
             $lien['name']= time() . "_". $lien['name'];
-            $insertSql = "INSERT INTO `Article`(`idVendeur`, `nomArticle`, `description`, `DateMiseEnLigne`, `url`) VALUES ('$idV','$nomAj','$descrAj','$dateAj',`$lien['name']`)";
+            $insertSql = "INSERT INTO `Article`(`idVendeur`, `nomArticle`, `description`, `DateMiseEnLigne`, `url`) VALUES ('$idV','$nomAj','$descrAj','$dateAj', <?php echo $lien['name'];?>)";
             $query=mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
             if($query==1){
                 $upl='./images/';
                 move_uploaded_file($lien['name'], $upl.$lien['name']);
-            }*/
+            }
         }
         else{
             $id=$_COOKIE['id'];
