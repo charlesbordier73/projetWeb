@@ -26,6 +26,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			<tr>
 				<td>
 				<?php
+				$img = mysql_fetch_array($images);		
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$mesArticles['idArticle']){
 						?>
@@ -34,11 +35,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 							
 					}
 				}
-				$images->closeCursor();
-				echo "toto";
-				echo $img['url'];
-				reset($img['url']);
-				echo $img['url'];
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
