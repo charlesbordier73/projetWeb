@@ -34,7 +34,7 @@ error_reporting(E_ALL);
     if(isset($_POST['detailArt'])){
         $detail="SELECT nomArticle, description, DateMiseEnLigne, url, nom, prenom, mail, tel, libCat FROM Vendeur, Article, CategorieVendeur
                 where idVendeur = id and categorie = idCat and idArticle = '$idArt'";
-        $query=mysql_query($detail) or die('Erreur SQL !'.$query.'<br>'.mysql_error());
+        $reqDetail=mysql_query($detail) or die('Erreur SQL !'.$reqDetail.'<br>'.mysql_error());
     }
 
     if(isset($name) && !empty($name)){

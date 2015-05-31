@@ -6,6 +6,7 @@ include 'catalogue.php';
 
 ?>
 Article :
+<br>
 <table border = "1">
 
 	<tr>
@@ -16,7 +17,7 @@ Article :
     </tr>
 
 	<?php
-	while($detail=mysql_fetch_array($query)){
+	while($detail=mysql_fetch_array($reqDetail)){
 
 	?>
 	<tr>
@@ -29,6 +30,7 @@ Article :
 <br>
 <br>
 Contact :
+<br>
 <table>
 
 	<tr>
