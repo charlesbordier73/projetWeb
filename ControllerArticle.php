@@ -15,6 +15,8 @@ if(!empty($name))
 }
 else if(isset($_POST['detailArt'])){
     $idAr=$_POST['idArt'];
+    echo "toto";
+    echo $idAr;
     include 'ModeleArticle.php';
     include 'details.php';
 }
