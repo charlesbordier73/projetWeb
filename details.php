@@ -6,7 +6,6 @@ include_once 'catalogue.php';
 
 ?>
 Article :
-<?php var_dump($reqDetail);?>
 <br>
 <table border = "1">
 
@@ -34,7 +33,7 @@ Article :
 <br>
 Contact :
 <br>
-<table>
+<table border = "1">
 
 	<tr>
     	<th>Nom</th>
