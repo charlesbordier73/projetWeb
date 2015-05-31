@@ -13,10 +13,12 @@ error_reporting(E_ALL);
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && !empty($idArticle)){
         $sql = "DELETE from Article where idArticle= '$idArticle'";
+        $img = "SELECT url from Article where idArticle= '$idArticle'";
+        mysql_query($img)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        mysql_query($sql)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         if($sql==1){
-            
-        }
-        mysql_query($sql);
+            unlink($img);
+        };
     }
     mysql_close();  // on ferme la connexion 
 ?>
