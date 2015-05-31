@@ -26,17 +26,17 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			<tr>
 				<td>
 				<?php
-				while($img = mysql_fetch_array($images, MYSQL_ASSOC)){
+				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$mesArticles['idArticle']){
 						?>
 							<img src="<?php echo $img['url'];?>" width="200" height="150" alt="" />
 						<?php
 							
 					}
-					echo current($img);
+					echo current($images);
 					echo "toto";
 					mysqli_data_seek($images, 0);
-					echo current($img);
+					echo current($images);
 
 				}
 				?>
