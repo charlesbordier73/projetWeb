@@ -24,17 +24,17 @@ error_reporting(E_ALL);
                 move_uploaded_file($lienIm['tmp_name'], $lien);
             }
         }
-        else if(isset($_POST['detailArt'])){
-            $detail="SELECT nomArticle, description, DateMiseEnLigne, url, nom, prenom, mail, tel, libCat FROM Vendeur, Article, CategorieVendeur
-                    where idVendeur = id and categorie = idCat and idArticle = '$idArt'";
-            $query=mysql_query($detail) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
-        }
         else{
             $id=$_COOKIE['id'];
             $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne, url from Article where idVendeur= '$id'";
             $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 
         }
+    }
+    if(isset($_POST['detailArt'])){
+        $detail="SELECT nomArticle, description, DateMiseEnLigne, url, nom, prenom, mail, tel, libCat FROM Vendeur, Article, CategorieVendeur
+                where idVendeur = id and categorie = idCat and idArticle = '$idArt'";
+        $query=mysql_query($detail) or die('Erreur SQL !'.$query.'<br>'.mysql_error());
     }
 
     if(isset($name) && !empty($name)){
