@@ -10,6 +10,10 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 		<input type="submit" value="Afficher vos articles" name="envoyer">
 	</form>
 
+	<form method="GET" action="ControllerArticle.php">
+		<input type="submit" value="Ajouter un article" name="ajouter">
+	</form>
+
 	<table border ="1">
 	    <tr>
 	    	<th>Images</th>
