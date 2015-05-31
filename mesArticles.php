@@ -33,7 +33,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<?php
 							
 					}
-					//mysqli_data_seek($images, 0);
+					mysqli_data_seek($img, 0);
 
 				}
 				?>
