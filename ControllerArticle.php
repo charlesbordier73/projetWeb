@@ -32,9 +32,9 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
-    else if(isset($_POST['ajouter'])){
+    else if(isset($_POST['modifier'])){
         echo "toto";
-        //include 'AjoutArticle.php';
+        include 'AjoutArticle.php';
     }
     else if(isset($_POST['validationAjout'])){
         /*$nomAj=mysql_escape_string($_POST['nomAj']);
