@@ -15,11 +15,13 @@ error_reporting(E_ALL);
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         $img = "SELECT url from Article where idArticle= '$idArticle'";
         mysql_query($img);
-        $url = mysql_fetch_array($img);
-        echo "toto";
-        echo $url[0];
+        while($url = mysql_fetch_array($img)){
+            echo "toto";
+            echo $img['url'];
+            unlink($img['url']);  
+        }
         mysql_query($sql);
-        unlink($img);
+
     }
     mysql_close();  // on ferme la connexion 
 ?>
