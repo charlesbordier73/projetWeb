@@ -30,23 +30,23 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $nomArticleMod=mysql_escape_string($_POST['nom']);
         $descrArticleMod=mysql_escape_string($_POST['descr']);
         include 'ModeleArticle.php';
-        inhttp://php-polycoin.rhcloud.com/catalogue.phpclude 'mesArticles.php'; 
+        include 'mesArticles.php'; 
     }
     else if(isset($_POST['modifier'])){
         echo "toto";
         include 'AjoutArticle.php';
     }
-    else if(isset($_POST['validationAjout'])){
-        /*$nomAj=mysql_escape_string($_POST['nomAj']);
+    /*else if(isset($_POST['validationAjout'])){
+        $nomAj=mysql_escape_string($_POST['nomAj']);
         $descrAj=mysql_escape_string($_POST['descrAj']);
         $dateAj=$_POST['date']);
         $idV=$_POST['idAjout']);
         $lien = $_FILES['lien'];
         include 'ModeleArticle.php';
-        include 'mesArticles.php'; */
+        include 'mesArticles.php'; 
 
-    }
-    else if{
+    }*/
+    else if(isset($_POST['afficher'])){
 
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
