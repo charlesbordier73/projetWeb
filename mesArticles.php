@@ -33,7 +33,9 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<?php
 							
 					}
+					echo current($img);
 					mysqli_data_seek($img, 0);
+					echo current($img);
 
 				}
 				?>
