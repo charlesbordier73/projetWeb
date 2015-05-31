@@ -5,11 +5,11 @@ include 'articleCo.php';
 if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 ?>
 
-	<form method="GET" action="ControllerArticle.php">
+	<form method="POST" action="ControllerArticle.php">
 		<input type="submit" value="Afficher vos articles" name="afficher">
 	</form>
 
-	<form method="GET" action="ControllerArticle.php">
+	<form method="POST" action="ControllerArticle.php">
 		<input type="submit" value="Ajouter un article" name="ajouter">
 	</form>
 
