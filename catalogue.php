@@ -36,7 +36,7 @@ if(isset($_GET['name'])){
 		{
 		?>
 			<tr>
-				<td><img src="<?php echo $article['url']; ?>" width="200" height="150" alt="" /></td>
+				<td><img src="<?php echo $article['url']; echo $mesArticles['idArticle'];?>" width="200" height="150" alt="" /></td>
 			    <td><?php echo $article['nomArticle']; ?></td>
 			    <td><?php echo $article['description']; ?></td>
 			    <td><?php echo $article['DateMiseEnLigne']; ?></td>
