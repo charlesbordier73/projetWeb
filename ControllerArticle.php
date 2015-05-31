@@ -46,6 +46,10 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'mesArticles.php'; 
 
     }
+    else if(isset($_POST['detailArt'])){
+        include 'ModeleArticle.php';
+        include 'details.php';
+    }
     else if(isset($_POST['afficher'])){
 
         include 'ModeleArticle.php';

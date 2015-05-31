@@ -1,0 +1,54 @@
+<?php 
+
+include_once'header.php';
+
+include 'catalogue.php';
+
+?>
+Article :
+<table>
+
+	<tr>
+    	<th>Images</th>
+        <th>Nom</th>
+        <th>Description</th>
+        <th>Date</th>
+    </tr>
+
+	<?php
+	while($detail=mysql_fetch_array($query)){
+
+	?>
+	<tr>
+		<td><img src="<?php echo $detail['url']; ?>" width="200" height="150" alt="" /></td>
+		<td><?php echo $detail['nomArticle']; ?></td>
+	    <td><?php echo $detail['description']; ?></td>
+	    <td><?php echo $detail['DateMiseEnLigne']; ?></td>
+	</tr>
+</table>
+<br>
+<br>
+Contact :
+<table>
+
+	<tr>
+    	<th>Nom</th>
+        <th>Prénom</th>
+        <th>mail</th>
+        <th>tél</th>
+        <th>Catégorie</th>
+    </tr>
+
+    <tr>
+    	<td><?php echo $detail['nom']; ?></td>
+	    <td><?php echo $detail['prenom']; ?></td>
+	    <td><?php echo $detail['mail']; ?></td>
+	    <td><?php echo $detail['tel']; ?></td>
+	    <td><?php echo $detail['libCat']; ?></td>	    
+	</tr>
+</table>
+<?php
+}
+?>
+
+

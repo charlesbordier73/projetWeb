@@ -43,7 +43,7 @@ if(isset($_GET['name'])){
 			    <td>
 			    	<form method="POST" action="ControllerArticle.php">
 			    		<input type="submit" value="Détails" name="detailArt">
-			    		<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idmod">
+			    		<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idArt">
 			    	</form>
 			    </td>
 
