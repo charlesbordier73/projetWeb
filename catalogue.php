@@ -40,6 +40,13 @@ if(isset($_GET['name'])){
 			    <td><?php echo $article['nomArticle']; ?></td>
 			    <td><?php echo $article['description']; ?></td>
 			    <td><?php echo $article['DateMiseEnLigne']; ?></td>
+			    <td>
+			    	<form method="POST" action="ControllerArticle.php">
+			    		<input type="submit" value="Détails" name="detailArt">
+			    		<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idmod">
+			    	</form>
+			    </td>
+
 			</tr>
 
 		<?php 
