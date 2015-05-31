@@ -16,7 +16,7 @@ error_reporting(E_ALL);
         $img = "SELECT url from Article where idArticle= '$idArticle'";
         $url = mysql_fetch_array($img);
         echo "toto";
-        echo $url['url'];
+        print_r($url);
         mysql_query($img);
         mysql_query($sql);
         unlink($img);
