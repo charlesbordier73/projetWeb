@@ -33,9 +33,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 		?>
 
 			<tr>
-				<td><img src="<?php echo $mesArticles['url']; ?>" width="200" height="150" alt="" />
-					<?php echo $mesArticles['url'];?>
-				</td>
+				<td><img src="<?php echo $mesArticles['url']; ?>" width="200" height="150" alt="" /></td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
 			    <td><?php echo $mesArticles['description']; ?></td>
 			    <td><?php echo $mesArticles['DateMiseEnLigne']; ?></td>
