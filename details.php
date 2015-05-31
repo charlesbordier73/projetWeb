@@ -21,7 +21,8 @@ Article :
 
 	?>
 	<tr>
-		<td><img src="<?php echo $detail['url']; ?>" width="200" height="150" alt="" /></td>
+		<td><?php echo "toto";?>
+			<img src="<?php echo $detail['url']; ?>" width="200" height="150" alt="" /></td>
 		<td><?php echo $detail['nomArticle']; ?></td>
 	    <td><?php echo $detail['description']; ?></td>
 	    <td><?php echo $detail['DateMiseEnLigne']; ?></td>
