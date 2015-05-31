@@ -17,7 +17,7 @@ error_reporting(E_ALL);
         mysql_query($img);
         mysql_query($sql);
         if($sql==1){
-            
+            echo "toto";
             unlink($sql);
         };
     }
