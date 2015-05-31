@@ -46,7 +46,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'mesArticles.php'; */
 
     }
-    else if(isset($_POST['afficher'])){
+    else if{
 
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
