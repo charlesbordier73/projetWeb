@@ -57,6 +57,8 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			</tr>
 
 		<?php 
+				$images->closeCursor();
+
 				echo "toto";
 				echo $img['url'];
 				reset($img['url']);
