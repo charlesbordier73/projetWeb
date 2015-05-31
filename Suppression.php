@@ -11,13 +11,13 @@ error_reporting(E_ALL);
     $link=mysql_connect($serveur, $username, $password); 
     mysql_select_db($bdd,$link) or die(mysql_error()); 
      
-    if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && isset($_POST['supprimer'])){
+    if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && !empty($idArticle)){
         $sql = "DELETE from Article where idArticle= '$idArticle'";
-        //$img = "SELECT url from Article where idArticle= '$idArticle'";
-        //mysql_query($img)) or die('Erreur SQL !'.$img.'<br>'.mysql_error());
-        $res=mysql_query($sql)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        $img = "SELECT url from Article where idArticle= '$idArticle'";
+        mysql_query($sql);
         /*if($sql==1){
-            unlink(realpath($img));
+            
+            unlink()
         };*/
     }
     mysql_close();  // on ferme la connexion 
