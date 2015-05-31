@@ -10,10 +10,10 @@ Article :
 <table border = "1">
 
 	<tr>
-    	<th>Images</th>
-        <th>Nom</th>
-        <th>Description</th>
-        <th>Date</th>
+    	<th>Images : </th>
+        <th>Nom : </th>
+        <th>Description : </th>
+        <th>Date : </th>
     </tr>
 
 	<?php
@@ -22,8 +22,7 @@ Article :
 
 	?>
 	<tr>
-		<td><?php echo "toto";?>
-			<img src="<?php echo $detail['url']; ?>" width="200" height="150" alt="" /></td>
+		<td><img src="<?php echo $detail['url']; ?>" width="200" height="150" alt="" /></td>
 		<td><?php echo $detail['nomArticle']; ?></td>
 	    <td><?php echo $detail['description']; ?></td>
 	    <td><?php echo $detail['DateMiseEnLigne']; ?></td>
@@ -36,11 +35,11 @@ Contact :
 <table border = "1">
 
 	<tr>
-    	<th>Nom</th>
-        <th>Prénom</th>
-        <th>mail</th>
-        <th>tél</th>
-        <th>Catégorie</th>
+    	<th>Nom : </th>
+        <th>Prénom : </th>
+        <th>mail : </th>
+        <th>tél : </th>
+        <th>Catégorie : </th>
     </tr>
 
     <tr>
