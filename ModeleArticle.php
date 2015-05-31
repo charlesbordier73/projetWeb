@@ -19,7 +19,10 @@ error_reporting(E_ALL);
         else{
             $id=$_COOKIE['id'];
             $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
+            $sql2 = "SELECT idArticle, url from Images";
             $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+            $images = mysql_query($sql2) or die('Erreur SQL !'.$sql2.'<br>'.mysql_error());
+
     }
     }
 
