@@ -34,9 +34,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 							
 					}
 				}
-				echo $img['url'];
-				reset($img['url']);
-				echo $img['url'];
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
@@ -60,6 +57,9 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			</tr>
 
 		<?php 
+			echo $img['url'];
+				reset($img['url']);
+				echo $img['url'];
 		}
 		$resultats->closeCursor();
 	?>
