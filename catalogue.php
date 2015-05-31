@@ -43,6 +43,7 @@ if(isset($_GET['name'])){
 			    <td>
 			    	<form method="POST" action="ControllerArticle.php">
 			    		<input type="submit" value="Détails" name="detailArt">
+			    		<?php echo "toto"; echo $mesArticles['idArticle'];?>
 			    		<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="idArt">
 			    	</form>
 			    </td>
