@@ -2,7 +2,7 @@
 
 include_once'header.php';
 
-include 'catalogue.php';
+include_once 'catalogue.php';
 
 ?>
 Article :
@@ -18,6 +18,7 @@ Article :
 
 	<?php
 	while($detail=mysql_fetch_array($reqDetail)){
+			print_r($detail);
 
 	?>
 	<tr>
