@@ -43,7 +43,6 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         print_r($_FILES);
         $lienMid = trim($_FILES['lien']['name']);
         echo "totot";
-
         echo $lienMid;
         //include 'ModeleArticle.php';
         include 'mesArticles.php'; 
