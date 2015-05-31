@@ -40,7 +40,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $descrAj=mysql_escape_string($_POST['descrAj']);
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
-        $lienMid = trim($_FILES['lien']['name']);
+        $lienCtrl = trim($_FILES['lien']['name']);
+        $lienIm = $_FILES['lien'];
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
 
