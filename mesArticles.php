@@ -6,7 +6,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 ?>
 
 	<form method="GET" action="ControllerArticle.php">
-		<input type="submit" value="Afficher vos articles" name="envoyer">
+		<input type="submit" value="Afficher vos articles" name="afficher">
 	</form>
 
 	<form method="GET" action="ControllerArticle.php">
