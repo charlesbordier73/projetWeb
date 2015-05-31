@@ -6,7 +6,7 @@ include 'catalogue.php';
 
 ?>
 Article :
-<table>
+<table border = "1">
 
 	<tr>
     	<th>Images</th>
