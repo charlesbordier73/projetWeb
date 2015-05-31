@@ -30,7 +30,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $nomArticleMod=mysql_escape_string($_POST['nom']);
         $descrArticleMod=mysql_escape_string($_POST['descr']);
         include 'ModeleArticle.php';
-        include 'mesArticles.php'; 
+        inhttp://php-polycoin.rhcloud.com/catalogue.phpclude 'mesArticles.php'; 
     }
     else if(isset($_POST['modifier'])){
         echo "toto";
