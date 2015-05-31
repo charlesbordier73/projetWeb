@@ -58,7 +58,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			</tr>
 
 		<?php 
-		mysqli_data_seek($images, 1);
+		$images=mysqli_data_seek($images, 0);
 
 		}
 		$resultats->closeCursor();
