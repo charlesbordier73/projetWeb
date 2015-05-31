@@ -15,7 +15,6 @@ error_reporting(E_ALL);
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         $img = "SELECT url from Article where idArticle= '$idArticle'";
         $res=mysql_query($img);
-        echo "totar";
         while($url = mysql_fetch_array($res)){
             unlink($url['url']);
         }
