@@ -33,13 +33,12 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<?php
 							
 					}
-
-				}
-				echo current($img);
+					echo current($img);
 					echo "toto";
-					mysqli_data_seek($img, 0);
+					mysqli_data_seek($images, 0);
 					echo current($img);
 
+				}
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
