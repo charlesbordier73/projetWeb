@@ -16,10 +16,7 @@ error_reporting(E_ALL);
         $img = "SELECT url from Article where idArticle= '$idArticle'";
         mysql_query($img);
         mysql_query($sql);
-        if($sql==1){
-            echo "toto";
-            unlink(realpath($img));
-        };
+        unlink($img);
     }
     mysql_close();  // on ferme la connexion 
 ?>
