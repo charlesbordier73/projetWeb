@@ -18,7 +18,7 @@ error_reporting(E_ALL);
         mysql_query($sql);
         if($sql==1){
             echo "toto";
-            unlink($sql);
+            unlink(realpath($img));
         };
     }
     mysql_close();  // on ferme la connexion 
