@@ -26,7 +26,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			<tr>
 				<td>
 				<?php
-				$img = mysql_fetch_array($images);		
+				//$img = mysql_fetch_array($images);		
 				while($img = mysql_fetch_array($images)){
 					if($img['idArticle']==$mesArticles['idArticle']){
 						?>
