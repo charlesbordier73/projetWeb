@@ -6,6 +6,7 @@ include_once 'catalogue.php';
 
 ?>
 Article :
+<?php print_r($reqDetail);?>
 <br>
 <table border = "1">
 
@@ -18,7 +19,7 @@ Article :
 
 	<?php
 	while($detail=mysql_fetch_array($reqDetail)){
-			print_r($reqDetail);
+
 
 	?>
 	<tr>
