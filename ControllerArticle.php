@@ -39,8 +39,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $nomAj=mysql_escape_string($_POST['nomAj']);
         $descrAj=mysql_escape_string($_POST['descrAj']);
         //$dateAj=$_POST['date']);
-        $idV=$_POST['idAjout']);
-        //$lien = $_FILES['lien'];
+        //$idV=$_POST['idAjout']);
+        $lien = $_FILES['lien'];
         //include 'ModeleArticle.php';
         //include 'mesArticles.php'; 
 
