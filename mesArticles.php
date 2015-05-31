@@ -12,6 +12,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 
 	<table border ="1">
 	    <tr>
+	    	<th>Images</th>
 	        <th>Nom</th>
 	        <th>Description</th>
 	        <th>Date</th>
@@ -23,6 +24,18 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 		?>
 
 			<tr>
+				<td>
+				<?php
+				while($img = mysql_fetch_array($images)){
+					if($img['idArticle']==$article['idArticle']){
+						?>
+							<img src="<?php echo $img['url'];?>" width="200" height="150" alt="" />
+						<?php
+							
+					}
+				}
+				?>
+				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
 			    <td><?php echo $mesArticles['description']; ?></td>
 			    <td><?php echo $mesArticles['DateMiseEnLigne']; ?></td>
