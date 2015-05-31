@@ -18,8 +18,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $idArticle=$_POST['id'];
         include 'Suppression.php';
         include 'mesArticles.php';
-    }   
-    /*else if(isset($_POST['modifier'])){
+    /*}   
+    else if(isset($_POST['modifier'])){
         $idArticle=$_POST['idmod'];
         $nomArticle=mysql_escape_string($_POST['nom']);
         $descrArticle=mysql_escape_string($_POST['descr']);
