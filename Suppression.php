@@ -17,13 +17,10 @@ error_reporting(E_ALL);
         $res=mysql_query($img);
         echo "totar";
         while($url = mysql_fetch_array($res)){
-            echo "toto";
-            echo $url['url'];
             unlink($url['url']);
-
         }
         mysql_query($sql);
 
     }
-    mysql_close();  // on ferme la connexion 
+    mysql_close();
 ?>
