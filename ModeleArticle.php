@@ -30,7 +30,7 @@ error_reporting(E_ALL);
             $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne, url from Article where idVendeur= '$id'";
             $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 
-    }
+        }
     }
 
     if(isset($name) && !empty($name)){
