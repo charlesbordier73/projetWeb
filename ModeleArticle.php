@@ -17,14 +17,14 @@ error_reporting(E_ALL);
             mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         }
         else if(isset($_POST['validationAjout'])){
-            $lien= "./images" . $lienMid['name'];
-            echo $lien['name'];
+            $lien= "./images" . $lienMid;
+            echo $lien;
             $insertSql = "INSERT INTO `Article`(`idVendeur`, `nomArticle`, `description`, `DateMiseEnLigne`, `url`) VALUES ('$idV','$nomAj','$descrAj','$dateAj', '$lien'";
             
             $query=mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
             if($query==1){
                 $upl='./images/';
-                move_uploaded_file($lien['name'], $upl.$lien['name']);
+                move_uploaded_file($lien, $upl.$lien);
             }
         }
         else{
