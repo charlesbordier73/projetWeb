@@ -18,7 +18,7 @@ Article :
 
 	<?php
 	while($detail=mysql_fetch_array($reqDetail)){
-			print_r($detail);
+			print_r($reqDetail);
 
 	?>
 	<tr>
