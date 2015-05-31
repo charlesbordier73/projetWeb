@@ -48,7 +48,7 @@ include 'header.php';
         </table>
         <br>
         <br>
-        <input type="submit" value="Modifier" name="validationAjout">
+        <input type="submit" value="Ajouter" name="validationAjout">
     </form>
         
     </center>
