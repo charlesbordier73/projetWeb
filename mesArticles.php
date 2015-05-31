@@ -35,6 +35,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 					}
 				}
 				reset($img);
+				echo $img;
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
