@@ -26,15 +26,14 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			<tr>
 				<td>
 				<?php
-				//$img = mysql_fetch_array($images);		
-				while($img = mysql_fetch_array($images)){
+				while($img = mysql_fetch_array($images, MYSQL_ASSOC)){
 					if($img['idArticle']==$mesArticles['idArticle']){
 						?>
 							<img src="<?php echo $img['url'];?>" width="200" height="150" alt="" />
 						<?php
 							
 					}
-					mysqli_data_seek($images, 0);
+					//mysqli_data_seek($images, 0);
 
 				}
 				?>
@@ -56,14 +55,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<input type="hidden" value="<?php echo $mesArticles['idArticle'];?>" name="id">
 
 					</form>
-				</td>
-				<td>
-					<?php
-					print_r($images);
-					echo "toto";
-					$images=mysqli_data_seek($images, 0);
-					print_r($images);
-				?>
 				</td>
 			</tr>
 
