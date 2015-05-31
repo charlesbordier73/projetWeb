@@ -34,6 +34,8 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 						<?php
 							
 					}
+					$images=mysqli_data_seek($images, 0);
+
 				}
 				?>
 				</td>
