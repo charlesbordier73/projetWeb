@@ -22,6 +22,7 @@ include 'header.php';
 </head>
 <body>
  <?php
+ echo "totar";
  if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
  ?>   
     <br>
@@ -50,6 +51,8 @@ include 'header.php';
     </form>
         
     </center>
+<?php
+}   
 ?>
 </body>
 </html>
