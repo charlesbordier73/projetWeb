@@ -40,9 +40,10 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $descrAj=mysql_escape_string($_POST['descrAj']);
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
+        print_r($_FILES);
         $lienMid = trim($_FILES['lien']['name']);
         echo "totot";
-        print_r($_FILES);
+
         echo $lienMid;
         //include 'ModeleArticle.php';
         include 'mesArticles.php'; 
