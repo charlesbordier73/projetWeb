@@ -18,10 +18,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			</td>
 		</tr>
 	</table>
-	
-	<form method="POST" action="ControllerArticle.php">
-		<input type="submit" value="Ajouter un article" name="ajouter">
-	</form>
 
 	<table border ="1">
 	    <tr>
