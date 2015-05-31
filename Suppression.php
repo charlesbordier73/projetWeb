@@ -14,9 +14,9 @@ error_reporting(E_ALL);
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && isset($_POST['supprimer'])){
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         $img = "SELECT url from Article where idArticle= '$idArticle'";
-        mysql_query($img);
+        $res=mysql_query($img);
         echo "totar";
-        while($url = mysql_fetch_array($img)){
+        while($url = mysql_fetch_array($res)){
             echo "toto";
             echo $url['url'];
             unlink($url['url']);
