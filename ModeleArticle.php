@@ -21,8 +21,8 @@ error_reporting(E_ALL);
             $insertSql = "INSERT INTO Article(idVendeur, nomArticle, description, DateMiseEnLigne, url) VALUES ('$idV','$nomAj','$descrAj','$dateAj', '$lien')";
             $query=mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
             if($query==1){
-                $upl='./images/';
-                move_uploaded_file($lienIm['tmp_name'], $upl.$lien);
+                echo "totomarche";
+                move_uploaded_file($lienIm['tmp_name'], $lien);
             }
         }
         else{
