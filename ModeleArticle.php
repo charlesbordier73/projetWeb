@@ -17,7 +17,7 @@ error_reporting(E_ALL);
             mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         }
         else if(isset($_POST['validationAjout'])){
-            $lien['name']= time() . "_". $lien['name'];
+            $lien['name']= time() . "_". $lienMid['name'];
             echo $lien['name'];
            /*$insertSql = "INSERT INTO `Article`(`idVendeur`, `nomArticle`, `description`, `DateMiseEnLigne`, `url`) VALUES ('$idV','$nomAj','$descrAj','$dateAj', "<?php echo $lien['name']";?>";
             
