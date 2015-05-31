@@ -18,19 +18,15 @@ error_reporting(E_ALL);
         }
         else{
             $id=$_COOKIE['id'];
-            $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where idVendeur= '$id'";
-            $sql2 = "SELECT idArticle, url from Images";
+            $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne, url from Article where idVendeur= '$id'";
             $resultats = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-            $images = mysql_query($sql2) or die('Erreur SQL !'.$sql2.'<br>'.mysql_error());
 
     }
     }
 
     if(isset($name) && !empty($name)){
-        $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne from Article where nomArticle LIKE '%$name%'";
-        $sql2 = "SELECT idArticle, url from Images";
+        $sql = "SELECT idVendeur, idArticle, nomArticle, description, DateMiseEnLigne, url from Article where nomArticle LIKE '%$name%'";
         $result = mysql_query($sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-        $images = mysql_query($sql2) or die('Erreur SQL !'.$sql2.'<br>'.mysql_error());
 
     }
 
