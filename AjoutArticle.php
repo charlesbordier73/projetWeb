@@ -26,7 +26,7 @@ include 'header.php';
  ?>   
     <br>
     <center>
-    <form method="POST" action="ControllerArticle.php">
+    <form method="POST" action="ControllerArticle.php" enctype="multipart/form-data">
         <table>
             <tr>
                 <td> Nom : </td> 
