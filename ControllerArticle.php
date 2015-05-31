@@ -32,7 +32,15 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
-    
+    else if(isset($_POST['ajouter'])){
+        include 'AjoutArticle.php';
+    }
+    else if(isset($_POST['validationAjout'])){
+        $lien = $_FILES['lien'];
+        include 'ModeleArticle.php';
+        include 'mesArticles.php'; 
+
+    }
     else{
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 

@@ -21,27 +21,33 @@ include 'header.php';
 
 </head>
 <body>
-    
+ <?php
+ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
+ ?>   
     <br>
     <center>
     <form method="POST" action="ControllerArticle.php">
         <table>
             <tr>
                 <td> Nom : </td> 
-                <td><input type="text" name="nom" size="20" value="<?php echo $nomArticle;?>" maxlength="50" required><td>
+                <td><input type="text" name="nom" size="20" placeholder="Nom" maxlength="50" required><td>
             </tr>
             <tr>
                 <td> Description : </td>
-                <td><input type="text" name="descr" size="20" value="<?php echo $descrArticle;?>" maxlength="50" required></td>
-                <input type="hidden" value="<?php echo $idArticle;?>" name="idModif">
+                <td><input type="text" name="descr" size="20" placeholder="Description..." maxlength="50" required></td>
             </tr>
+            <tr>
+                <input type="file"  name="lien" accept="./image/*" >
+            </tr>
+                <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAjout">
+
         </table>
         <br>
         <br>
-        <input type="submit" value="Modifier" name="validationModif">
+        <input type="submit" value="Modifier" name="validationAjout">
     </form>
         
     </center>
-
+?>
 </body>
 </html>
