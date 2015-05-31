@@ -55,10 +55,18 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 
 					</form>
 				</td>
+				<td>
+					<?php
+					print_r($images);
+					echo "toto";
+					$images=mysqli_data_seek($images, 0);
+					print_r($images);
+				?>
+				</td>
 			</tr>
 
 		<?php 
-		$images=mysqli_data_seek($images, 0);
+
 
 		}
 		$resultats->closeCursor();
