@@ -15,7 +15,7 @@ error_reporting(E_ALL);
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         //$img = "SELECT url from Article where idArticle= '$idArticle'";
         //mysql_query($img)) or die('Erreur SQL !'.$img.'<br>'.mysql_error());
-        mysql_query($sql)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+        $res=mysql_query($sql)) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
         /*if($sql==1){
             unlink(realpath($img));
         };*/
