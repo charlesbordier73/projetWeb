@@ -34,7 +34,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 							
 					}
 				}
-				reset($img);
+				reset($img['url']);
 				echo $img['url'];
 				?>
 				</td>
