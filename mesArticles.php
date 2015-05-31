@@ -34,6 +34,11 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 							
 					}
 				}
+				$images->closeCursor();
+				echo "toto";
+				echo $img['url'];
+				reset($img['url']);
+				echo $img['url'];
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
@@ -57,12 +62,6 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 			</tr>
 
 		<?php 
-				$images->closeCursor();
-
-				echo "toto";
-				echo $img['url'];
-				reset($img['url']);
-				echo $img['url'];
 		}
 		$resultats->closeCursor();
 	?>
