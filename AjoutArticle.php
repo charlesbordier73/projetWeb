@@ -40,8 +40,9 @@ include 'header.php';
                 <td> Image : </td>
                 <td><input type="file"  name="lien"></td>
             
-                <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAjout">
-                <input type="hidden" value="<?php echo gmdate('Y-m-d');?>" name="date">
+                <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAj">
+                <input type="hidden" value="<?php echo gmdate('Y-m-d');?>" name="dateAj">
+
             </tr>
 
         </table>

@@ -38,11 +38,11 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     else if(isset($_POST['validationAjout'])){
         $nomAj=mysql_escape_string($_POST['nomAj']);
         $descrAj=mysql_escape_string($_POST['descrAj']);
-        $dateAj=$_POST['date']);
-        $idV=$_POST['idAjout']);
+        $dateAj=$_POST['dateAj'];
+        $idV=$_POST['idAj'];
         $lien = $_FILES['lien'];
-        //include 'ModeleArticle.php';
-        //include 'mesArticles.php'; 
+        include 'ModeleArticle.php';
+        include 'mesArticles.php'; 
 
     }
     else if(isset($_POST['afficher'])){
