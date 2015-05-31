@@ -6,7 +6,7 @@ include_once 'catalogue.php';
 
 ?>
 Article :
-<?php print_r($reqDetail);?>
+<?php var_dump($reqDetail);?>
 <br>
 <table border = "1">
 
