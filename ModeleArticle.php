@@ -19,9 +19,10 @@ error_reporting(E_ALL);
         else if(isset($_POST['validationAjout'])){
             $lienImg= $lien['name'];
             $insertSql = "INSERT INTO `Article`(`idVendeur`, `nomArticle`, `description`, `DateMiseEnLigne`, `url`) VALUES ('$idV','$nomAj','$descrAj','$dateAj','$lienImg')";
-            mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
-            if(mysql_query($insertSql)==1){
+            $query=mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
+            if($query==1){
                 $upl='./images/';
+                echo $lienImg;
                 move_uploaded_file($lienImg, $upl.$lienImg);
             }
         }
