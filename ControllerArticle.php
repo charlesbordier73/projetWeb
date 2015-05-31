@@ -42,6 +42,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $idV=$_POST['idAj'];
         $lienMid = trim($_FILES['lien']['name']);
         echo "totot";
+        print_r($_FILES);
         echo $lienMid;
         //include 'ModeleArticle.php';
         include 'mesArticles.php'; 
