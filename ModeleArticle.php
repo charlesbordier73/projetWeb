@@ -22,7 +22,6 @@ error_reporting(E_ALL);
             $query=mysql_query($insertSql) or die('Erreur SQL !'.$insertSql.'<br>'.mysql_error());
             if($query==1){
                 $upl='./images/';
-                echo $lienImg;
                 move_uploaded_file($lienImg, $upl.$lienImg);
             }
         }

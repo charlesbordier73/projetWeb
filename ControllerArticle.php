@@ -41,6 +41,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
         $lien = trim($_FILES['lien']);
+        echo $lien;
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
 
