@@ -18,8 +18,8 @@ error_reporting(E_ALL);
         echo "totar";
         while($url = mysql_fetch_array($img)){
             echo "toto";
-            echo $img['url'];
-            unlink($img['url']);
+            echo $url['url'];
+            unlink($url['url']);
 
         }
         mysql_query($sql);
