@@ -13,6 +13,9 @@ error_reporting(E_ALL);
      
     if(isset($_COOKIE['id']) && isset($_COOKIE['token']) && !empty($idArticle)){
         $sql = "DELETE from Article where idArticle= '$idArticle'";
+        if($sql==1){
+            
+        }
         mysql_query($sql);
     }
     mysql_close();  // on ferme la connexion 
