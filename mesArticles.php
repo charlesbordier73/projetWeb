@@ -27,7 +27,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 				<td>
 				<?php
 				while($img = mysql_fetch_array($images)){
-					if($img['idArticle']==$article['idArticle']){
+					if($img['idArticle']==$mesArticles['idArticle']){
 						?>
 							<img src="<?php echo $img['url'];?>" width="200" height="150" alt="" />
 						<?php
