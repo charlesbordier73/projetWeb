@@ -15,6 +15,7 @@ error_reporting(E_ALL);
         $sql = "DELETE from Article where idArticle= '$idArticle'";
         $img = "SELECT url from Article where idArticle= '$idArticle'";
         $url = mysql_fetch_array($img);
+        echo "toto";
         echo $url['url'];
         mysql_query($img);
         mysql_query($sql);
