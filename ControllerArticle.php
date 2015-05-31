@@ -36,7 +36,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         echo "toto";
         include 'AjoutArticle.php';
     }
-    /*else if(isset($_POST['validationAjout'])){
+    else if(isset($_POST['validationAjout'])){
         $nomAj=mysql_escape_string($_POST['nomAj']);
         $descrAj=mysql_escape_string($_POST['descrAj']);
         $dateAj=$_POST['date']);
@@ -45,7 +45,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
 
-    }*/
+    }
     else if(isset($_POST['afficher'])){
 
         include 'ModeleArticle.php';

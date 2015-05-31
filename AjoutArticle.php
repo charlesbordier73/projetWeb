@@ -22,7 +22,6 @@ include 'header.php';
 </head>
 <body>
  <?php
- echo "totar";
  if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
  ?>   
     <br>
@@ -38,7 +37,8 @@ include 'header.php';
                 <td><input type="text" name="descrAj" size="20" placeholder="Description..." maxlength="50" required></td>
             </tr>
             <tr>
-                <input type="file"  name="lien" accept="./image/*" >
+                <td> Image : </td>
+                <td><input type="file"  name="lien" accept="./image/*" ></td>
             </tr>
                 <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAjout">
                 <input type="hidden" value="<?php echo gmdate('Y-m-d');?>" name="date">
