@@ -35,7 +35,7 @@ if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
 							
 					}
 				}
-				$img=mysqli_data_seek($img, 0);
+				mysqli_data_seek($images, 0);
 				?>
 				</td>
 			    <td><?php echo $mesArticles['nomArticle']; ?></td>
