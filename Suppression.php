@@ -18,7 +18,7 @@ error_reporting(E_ALL);
         mysql_query($sql);
         if($sql==1){
             
-            unlink(realpath($sql));
+            unlink($sql);
         };
     }
     mysql_close();  // on ferme la connexion 
