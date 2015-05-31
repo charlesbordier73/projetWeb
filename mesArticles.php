@@ -3,7 +3,6 @@ include 'header.php';
 include 'articleCo.php';
 
 if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
-echo gmdate('Y-m-d');
 ?>
 
 	<form method="GET" action="ControllerArticle.php">

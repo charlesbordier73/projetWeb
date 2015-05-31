@@ -30,16 +30,18 @@ include 'header.php';
         <table>
             <tr>
                 <td> Nom : </td> 
-                <td><input type="text" name="nom" size="20" placeholder="Nom" maxlength="50" required><td>
+                <td><input type="text" name="nomAj" size="20" placeholder="Nom" maxlength="50" required><td>
             </tr>
             <tr>
                 <td> Description : </td>
-                <td><input type="text" name="descr" size="20" placeholder="Description..." maxlength="50" required></td>
+                <td><input type="text" name="descrAj" size="20" placeholder="Description..." maxlength="50" required></td>
             </tr>
             <tr>
                 <input type="file"  name="lien" accept="./image/*" >
             </tr>
                 <input type="hidden" value="<?php echo $_COOKIE['id'];?>" name="idAjout">
+                <input type="hidden" value="<?php echo gmdate('Y-m-d');?>" name="date">
+
 
         </table>
         <br>
