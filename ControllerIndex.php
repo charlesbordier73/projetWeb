@@ -5,7 +5,7 @@ else
     $login="";
 
 if(isset($_POST['mdp']))
-    $mdp=mysql_escape_string(htmlspecialchars$_POST['mdp']));
+    $mdp=mysql_escape_string(htmlspecialchars($_POST['mdp']));
 else
     $mdp="";
 
