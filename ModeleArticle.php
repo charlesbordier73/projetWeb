@@ -3,8 +3,8 @@
 error_reporting(E_ALL);
 
     $serveur = "127.2.204.2";
-    $username = "adminEGbGpij";
-    $password = "cDk-2WrRQM_U";
+    $username = "login";
+    $password = "mdp";
     $bdd = "php";
 
    // connexion
