@@ -2,32 +2,32 @@
 
 //récupération des champs
 if(isset($_POST['nom']))
-    $nom=mysql_escape_string($_POST['nom']);
+    $nom=mysql_escape_string(htmlspecialchars($_POST['nom']));
 else
     $nom="";
 
 if(isset($_POST['prenom']))
-    $prenom=mysql_escape_string($_POST['prenom']);
+    $prenom=mysql_escape_string(htmlspecialchars($_POST['prenom']));
 else
     $prenom="";
 
 if(isset($_POST['email']))
-    $email=mysql_escape_string($_POST['email']);
+    $email=mysql_escape_string(htmlspecialchars($_POST['email']));
 else
     $email="";
 
 if(isset($_POST['tel']))
-    $tel=mysql_escape_string($_POST['tel']);
+    $tel=mysql_escape_string(htmlspecialchars($_POST['tel']));
 else
     $tel="";
 
 if(isset($_POST['login']))
-    $login=mysql_escape_string($_POST['login']);
+    $login=mysql_escape_string(htmlspecialchars($_POST['login']));
 else
     $login="";
 
 if(isset($_POST['mdp']))
-    $mdp=mysql_escape_string($_POST['mdp']);
+    $mdp=mysql_escape_string(htmlspecialchars($_POST['mdp']));
 else
     $mdp="";
 

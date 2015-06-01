@@ -2,7 +2,7 @@
 
  
 if(isset($_GET['name']))
-    $name=mysql_escape_string($_GET['name']);
+    $name=mysql_escape_string(htmlspecialchars($_GET['name']));
 else
     $name="";
 
@@ -27,14 +27,14 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }   
     else if(isset($_POST['modifier'])){
         $idArticle=$_POST['idmod'];
-        $nomArticle=mysql_escape_string($_POST['nom']);
-        $descrArticle=mysql_escape_string($_POST['descr']);
+        $nomArticle=mysql_escape_string(htmlspecialchars($_POST['nom']));
+        $descrArticle=mysql_escape_string(htmlspecialchars($_POST['descr']));
         include 'Modification.php';
     }
     else if(isset($_POST['validationModif'])){
         $idArticleMod=$_POST['idModif'];
-        $nomArticleMod=mysql_escape_string($_POST['nom']);
-        $descrArticleMod=mysql_escape_string($_POST['descr']);
+        $nomArticleMod=mysql_escape_string(htmlspecialchars($_POST['nom']));
+        $descrArticleMod=mysql_escape_string(htmlspecialchars($_POST['descr']));
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }

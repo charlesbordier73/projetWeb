@@ -1,11 +1,11 @@
 <?php
 if(isset($_POST['login']))
-    $login=mysql_escape_string($_POST['login']);
+    $login=mysql_escape_string(htmlspecialchars($_POST['login']));
 else
     $login="";
 
 if(isset($_POST['mdp']))
-    $mdp=mysql_escape_string($_POST['mdp']);
+    $mdp=mysql_escape_string(htmlspecialchars$_POST['mdp']));
 else
     $mdp="";
 

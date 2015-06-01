@@ -1,0 +1,6 @@
+Optons -Indexes +FollowSymLinks
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(js|css|jpg|png)$
+RewriteRule ^(.php)$ $1 [L]
