@@ -33,8 +33,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }
     else if(isset($_POST['validationModif'])){
         $idArticleMod=$_POST['idModif'];
-        $nomArticleMod=mysql_escape_string(htmlspecialchars($_POST['nom']));
-        $descrArticleMod=mysql_escape_string(htmlspecialchars($_POST['descr']));
+        $nomArticleMod=mysql_escape_string($_POST['nom']);
+        $descrArticleMod=mysql_escape_string($_POST['descr']);
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
@@ -42,8 +42,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'AjoutArticle.php';
     }
     else if(isset($_POST['validationAjout'])){
-        $nomAj=mysql_escape_string(htmlspecialchars($_POST['nomAj']));
-        $descrAj=mysql_escape_string(htmlspecialchars($_POST['descrAj']));
+        $nomAj=mysql_escape_string($_POST['nomAj']);
+        $descrAj=mysql_escape_string($_POST['descrAj']);
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
         $lienCtrl = trim($_FILES['lien']['name']);
