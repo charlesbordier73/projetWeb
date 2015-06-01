@@ -43,7 +43,7 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }
     else if(isset($_POST['validationAjout'])){
         $nomAj=mysql_escape_string(htmlspecialchars($_POST['nomAj']));
-        $descrAj=mysql_escape_string(htmlspecialchars($_POST['descrAj']);
+        $descrAj=mysql_escape_string(htmlspecialchars($_POST['descrAj']));
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
         $lienCtrl = trim($_FILES['lien']['name']);
