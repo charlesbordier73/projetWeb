@@ -1,4 +1,4 @@
-Optons -Indexes +FollowSymLinks
+Options -Indexes +FollowSymLinks
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
