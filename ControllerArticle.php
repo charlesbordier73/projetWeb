@@ -33,8 +33,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
     }
     else if(isset($_POST['validationModif'])){
         $idArticleMod=$_POST['idModif'];
-        $nomArticleMod=mysql_escape_string($_POST['nom']);
-        $descrArticleMod=mysql_escape_string($_POST['descr']);
+        $nomArticleMod=mysql_escape_string(htmlspecialchars($_POST['nom']));
+        $descrArticleMod=mysql_escape_string(htmlspecialchars($_POST['descr']));
         include 'ModeleArticle.php';
         include 'mesArticles.php'; 
     }
