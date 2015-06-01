@@ -42,8 +42,8 @@ else if(isset($_COOKIE['id']) && isset($_COOKIE['token'])){
         include 'AjoutArticle.php';
     }
     else if(isset($_POST['validationAjout'])){
-        $nomAj=mysql_escape_string($_POST['nomAj']);
-        $descrAj=mysql_escape_string($_POST['descrAj']);
+        $nomAj=mysql_escape_string(htmlspecialchars($_POST['nomAj']);
+        $descrAj=mysql_escape_string(htmlspecialchars($_POST['descrAj']);
         $dateAj=$_POST['dateAj'];
         $idV=$_POST['idAj'];
         $lienCtrl = trim($_FILES['lien']['name']);
